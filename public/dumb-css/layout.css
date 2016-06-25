@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, object, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, caption, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	/*vertical-align: baseline;*/
+	vertical-align: top;
+}
+p {
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	/*vertical-align: baseline;*/
+	vertical-align: top;
+	background: transparent;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*vertical-align: baseline;*/
+	vertical-align: top;
+	background: transparent;
+}
+body table {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+	/*vertical-align: baseline;*/
+	vertical-align: top;
+	background: transparent;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+body table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: sans-serif;
+	line-height: 1.1em;
+}
+body.ar {
+	direction: rtl;
+}
+/*--- Princing Information ---*/
+.pricing {
+	color: #000;
+	display: block;
+	font-size: 11px; /*point*/
+	padding: 2px 10px;
+	text-align: center;
+}
+/*--- banner Settings ---*/
+.banner, 
+.confirmation-banner {
+	display: block;
+}
+.banner img, 
+.confirmation-banner img {
+	width: 100%;
+}
+.confirmation-banner img {
+	border: none;
+}
+/*--- Click Here Settings ---*/
+body.ar #default-state {
+	text-align: right;
+}
+#default-state {
+	text-align: left;
+	padding: 0 10px;
+	margin: 5px 10px;
+}
+#default-state a, 
+#default-state a:active, 
+#default-state a:visited {
+	color: #0066ff;
+}
+#default-state .info a {
+	font-size: 13px;
+}
+#default-state .info span {
+	color: #000;
+	font-size: 13px;
+}
+/*--- Number Entry Settings---*/
+#number-entry {
+	display: block;
+	margin: 5px 20px;
+	text-align: center;
+}
+#number-entry label {
+	color: #000;
+	display: block;
+	font-size: 15px; /*point*/
+	font-weight: bold;
+}
+#number-entry input[type="tel"] {
+	margin: 0;
+	width: 160px; /*point*/
+	padding: 10px; /*point*/
+	font-size: 18px; /*point*/
+	-wap-input-format: "*N";
+	z-index: 1;
+	position: relative;
+	border: 1px solid #000;
+	background: #efefef;
+	direction: ltr;
+}
+/*--- PIN Entry Settings---*/
+#pin-entry {
+	display: block;
+	margin: 5px 20px;
+	text-align: center;
+}
+#pin-entry label {
+	color: #000;
+	display: block;
+	margin: 5px 10px;
+}
+#pin-entry label.small {
+	font-size: 13px;/*point*/
+}
+#pin-entry label.smaller, 
+#pin-entry label.info {
+	font-size: 11px;/*point*/
+}
+#pin-entry label.info {
+	margin-bottom: 10px;/*point*/
+}
+#pin-entry label.big {
+	font-size: 15px;/*point*/
+	color: #db3e6c;
+	font-weight: bold;
+}
+#pin-entry input[type="tel"] {
+	z-index: 1;
+	margin: 0px;
+	width: 60px; /*point*/
+	padding: 10px; /*point*/
+	font-size: 18px; /*point*/
+	position: relative;
+	text-align: center;
+ 	-wap-input-format: "*N";
+	border: 1px solid #000;
+	background: #efefef;
+	direction: ltr;
+}
+/*--- Double-confirmation Settings ---*/
+#double-confirmation{
+	text-align: center;
+	margin: 0;
+}
+#double-confirmation .info {
+	font-size: 13px;/*point*/
+	padding: 7px 20px 2px 20px;
+	margin: 0px 0 0 0;
+}
+#double-confirmation .no {
+	color: #000;
+	display: block;
+	font-size: 13px;/*point*/
+	margin: 0 0px 15px 0px;
+	text-decoration: underline;
+}
+#double-confirmation .info-highlight {
+	color: #1f73af;
+	display: block;
+	font-size: 17px;/*point*/
+	font-weight: bold;
+	padding: 0 10px;
+	line-height: 1.3em;
+}
+#double-confirmation .price {
+	font-size: 13px;
+	margin: 0 0 7px 0;
+	padding: 0 10px 13px 10px;
+}
+#double-confirmation .button span {
+	display: block;
+	padding: 0 20px;
+}
+/*--- MO Settings ---*/
+#mo {
+	display: block;
+	margin: 5px 10px;
+	text-align: center;
+}
+#mo .info {
+	color: #000;
+	font-size: 13px;/*point*/
+	/*line-height: 1.5em;*/
+}
+#mo h3 {
+	color: #1f73af;
+	font-size: 18px;/*point*/
+	margin: 5px 0px;
+}
+#mo span {
+	color: #000;
+	font-size: 24px;/*point*/
+	font-weight: bold;
+}
+/*--- Congratulations Settings ---*/
+#congrats {
+	display: block;
+	margin: 5px 10px;
+	text-align: center;
+}
+#congrats h3 {
+	color: #1f73af;
+	font-size: 17px;/*point*/
+	margin: 5px 0px;
+}
+#congrats span {
+	color: #000;
+	font-size: 13px;/*point*/
+	display: inline-block;
+}
+/*--- Button Settings ---*/
+.button {
+	display: block;
+	margin: 10px auto;
+	text-align: center;
+}
+.button, 
+.button img {
+	width: 100%; /*point*/
+}
+/*--- Language Button Settings ---*/
+.language-btn {
+	display: block;
+	text-align: center;
+}
+.language-btn img {
+	width: 100px;
+}
+/*--- Arrow Settings ---*/
+.arrow-wrap {
+	display: block;
+	margin: 5px 0px;
+	position: relative;
+}
+.arrow-wrap img {
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	margin: 0px auto;
+	position: absolute;
+	height: 43px;
+}
+.arrow-wrap.number img {
+	width: 280px; /*point*/
+}
+.arrow-wrap.pin img {
+	width: 170px; /*point*/
+}
+/*--- Error Settings ---*/
+.error {
+	color: #FD0004;
+	font-size: 13px; /*point*/
+}
+/*--- Disclaimer Information ---*/
+.disclaimer {
+	color: #000;
+	font-size: 11px; /*point*/
+	margin: 30px 0px 0px 0px;
+	padding: 10px;
+	text-align: justify;
+	line-height: 1.4em;
+}
+.disclaimer a, 
+.disclaimer a:active, 
+.disclaimer a:visited {
+	color: #000;
+	display: block;
+	font-size: 13px;
+	margin: 10px 0px;
+	text-align: left;
+}

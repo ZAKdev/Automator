@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="stage" value="qa">
+    <meta name="suffix" value="html5-ke-airtel-en-default">
+    <meta name="creative" value="TrainYourBrain">
+    <meta name="page-id" value="2196">
+    <meta name="service" value="Brain2Train">
+    <meta name="platform" value="html5">
+    <meta name="operator" value="airtel">
+    <meta name="one-file" value="false">
+    <meta name="language" value="en">
+    <meta name="jira-task-id" value="INTGR-362">
+    <meta name="country" value="ke">
+    <meta name="author" value="Genesis">
+    <meta name="test-campaign" value="19018">
+    <meta charset="utf-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <title data-c-role="title">Brain2Train</title>
+    <meta name="postfix" value="default">
+
+    <!-- Global Styles -->
+    <link href="/creatives/TrainYourBrain/assets/css/main.css" rel="stylesheet">
+    <link href="/creatives/TrainYourBrain/assets/css/custom-ke.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="container" class="show-subscribe-button">
+
+        <div id="content">
+
+            <div data-x-role="price" class="price-info">KES 15/message, 1 message/day.</div>
+
+            <div id="creative-content">
+                <div class="title"></div>
+                <div class="title2"></div>
+                <div id="main-img"></div>
+                <div id="dcimg"></div>
+                <div class="ma_logo" style="background-image:url(/creatives/TrainYourBrain/assets/img/b2t_logo.png);background-size:120px auto;"></div>
+                <div class="blub"></div>
+                <div class="shine"></div>
+            </div>
+            <div class="dog"></div>
+            <div class="cat"></div>
+
+            <!-- DEFAULT STATE -->
+            <div id="default-state">
+                <a href="javascript:void(0)" id="subscribe" class="btn subscribe pulse">
+                    <span data-x-role="subscribe-now" style="font-size:25px;display:block;margin-top:0px">Subscribe Now!</span>
+                </a>
+            </div>
+
+            <!-- DOUBLE CONFIRMATION -->
+            <div id="double-confirmation" style="display: none">
+                <span data-x-role="subscription-info" class="subscription-info">Press YES to confirm your subscription.</span>
+                <a href="javascript:void(0)" id="confirm" class="btn default green pulse">
+                    <span data-x-role="confirmation-yes">YES</span>
+                </a>
+                <span data-x-role="confirmation-no" id="double-confirmation-no">No</span>
+            </div>
+
+            <!-- SUBSCRIPTION POLLING -->
+            <div id="subscription-polling" style="display: none">
+                <span data-x-role="subscription-info" class="subscription-info">Processing subscription...</span>
+                <div id="loader" class="preloader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- NUMBER ENTRY -->
+            <form id="number-entry" style="display:none">
+                <label data-x-role="enter-number">Enter your mobile number</label>
+                <input type="tel" id="number" maxlength="10" value="07">
+                <a href="javascript:void(0)" id="submit-number" class="btn default green pulse">
+                    <span data-x-role="number-entry-submit">Continue</span>
+                </a>
+                <div id="already-subscribed-error" class="error" data-x-role="already-subscribed-error" style="display: none">You are already subscribed to this service</div>
+                <div id="invalid-number-error" class="error" data-x-role="invalid-number-error" style="display: none">Please enter a valid number</div>
+            </form>
+
+            <!-- PIN ENTRY -->
+            <form id="pin-entry" style="display:none">
+                <label data-x-role="pin-entry-help">
+                    <strong>You will now receive an sms with pin code.</strong>
+                    <span>To confirm your subscription enter the PIN code below</span>
+                </label>
+                <input type="tel" id="pin" maxlength="4">
+                <a href="javascript:void(0)" id="submit-pin" class="btn default green pulse">
+                    <span data-x-role="pin-entry-submit">Submit</span>
+                </a>
+                <div id="invalid-pin-error" class="error" data-x-role="invalid-pin-error" style="display:none1">You entered a wrong PIN</div>
+            </form>
+
+            <!-- MO MESSAGE -->
+            <div id="mo" style="display:none">
+                <span data-x-role="subscription-info" class="subscription-info">Your subscription will be renewed automatically.</span>
+                <h3 data-x-role="mo-sms">sms</h3>
+                <div id="keyword">KWORD</div>
+                <h3 data-x-role="mo-to">to</h3>
+                <div id="short-code">SCODE</div>
+            </div>
+
+            <!-- CONGRATS -->
+            <div id="congrats" style="display:none">
+                <h3 data-x-role="congrats">Congratulations</h3>
+                <h6 data-x-role="successfully-subscribed">You have been successfully subscribed<br>to the service</h6>
+            </div>
+
+        </div>
+
+        <div id="click-here">
+            <a href="javascript:void(0)" id="subscribe-link" data-c-role="click-here" class="subscribe">Click Here</a>
+            <span data-c-role="click-here-message">to subscribe to the service!</span>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div data-x-role="disclaimer" id="disclaimer">
+                Copyright © 2016* Welcome to Brain2Train service in Kenya. You will be charged KES 15 per day and your subscription will be renewed automatically. You will receive 1 message every day with each message giving you a link to a new puzzle quiz. You can unsubscribe from this service by sending UNSUB BRAIN2TRAIN to 20442. To make use of this service you must be more than 18 years old or have received permission from your parents or person who is authorized to pay your bill. Brain2Train.com works in accordance with the international code of conduct for SMS services.<br><br>
+                <a href="http://m.brain2train.com/View.aspx?v=Terms&lang=en" target="_blank">Terms &amp; Conditions</a> 
+            </div>
+        </div>
+
+        <script type="text/javascript" data-ignore-renderer=""><ejs>- include "public/partials/mobi-one-constants.ejs"</ejs></script>
+        <ejs>include "/public/partials/mobi-one-html5-scripts.ejs"</ejs>
+        <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+        <ejs>include "/public/partials/image-pixel.ejs"</ejs>
+
+    </div>
+
+</body>
+</html>

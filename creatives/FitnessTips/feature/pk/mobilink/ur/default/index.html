@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="stage" value="qa">
+    <meta name="suffix" value="feature-pk-mobilink-ur-default">
+    <meta name="creative" value="FitnessTips">
+    <meta name="page-id" value="1767">
+    <meta name="service" value="Mobile Academy">
+    <meta name="platform" value="feature">
+    <meta name="operator" value="Mobilink">
+    <meta name="one-file" value="false">
+    <meta name="language" value="ur">
+    <meta name="jira-task-id" value="WAP-5354">
+    <meta name="country" value="pk">
+    <meta name="author" value="Genesis">
+    <meta name="double-confirmation" value="false">
+    <meta charset="utf-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="test-campaign" value="16986">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <title data-c-role="title">Mobile Academy</title>
+    <meta name="postfix" value="default">
+
+    <ejs> if (state == "congrats" && redirect == true) { </ejs>
+        <meta http-equiv="refresh" content="<ejs>= interval </ejs>; url=<ejs>= nextUrl </ejs>">
+    <ejs> } </ejs>
+
+    <link href="/public/dumb-css/reset.css" rel="stylesheet">
+    <link href="/public/dumb-css/points.css" rel="stylesheet">
+    <link href="/public/dumb-css/layout.css" rel="stylesheet">
+    <link href="/creatives/FitnessTips/feature/pk/mobilink/ur/default/css/custom.css" rel="stylesheet">
+
+</head>
+
+<body class="ar res<ejs>= resolution </ejs>">
+
+    <!-- PRICE HEADER -->
+    <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+        <div data-x-role="price" class="pricing">PKR 11.95 فی پیغام</div>
+
+    <ejs> } </ejs>
+
+    <!-- WAP MAIN HEADER -->
+    <ejs> if (state != "double-confirmation" && state != "pin-entry" && state != "mo" && state != "congrats") { </ejs>
+
+        <div class="banner">
+            <img src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/headers/header-<ejs>= headerOrientation </ejs><ejs>= headerWidth </ejs>-ur.jpg">
+        </div>
+
+    <ejs> } </ejs>
+
+    <!-- WAP SUB HEADER -->
+    <ejs> if (state != "default-state" && state != "number-entry") { </ejs>
+
+        <div class="confirmation-banner">
+            <img src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/sub-headers/sub-header-<ejs>= subHeaderOrientation </ejs><ejs>= subHeaderWidth </ejs>-ur.jpg">
+        </div>
+
+    <ejs> } </ejs>
+
+    <!-- DEFAULT STATE -->
+    <ejs> if (state == "default-state") { </ejs>
+
+        <div id="default-state">
+            <div class="info">
+                <a href="<ejs>= nextUrl </ejs>">یہاں کلک کریں</a>
+                <span data-c-role="click-here-message"> موبائل اکیڈمی کی سروس کا حصّہ بننے کے لئے اور اپنے موبائل پر نئے کورس شروع کرنے کے لئے</span>
+            </div>
+            <a href="<ejs>= nextUrl </ejs>" id="subscribe" class="button">
+                <img src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/subscribe-btns/subscribe-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ur.gif">
+            </a>
+        </div>
+
+    <ejs> } </ejs>
+
+    <!-- DOUBLE CONFIRMATION -->
+    <ejs> if (state == "double-confirmation") { </ejs>
+
+        <div id="double-confirmation">
+            <div class="info-highlight">اپنی سبسکرپشن کی تصدیق کرنے کے لئے "ہاں " دبایں </div>
+            <a href="<ejs>= yesUrl </ejs>" id="confirm" class="button"> <img src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/yes-btns/yes-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ur.gif"> </a>
+            <a href="<ejs>= noUrl </ejs>" data-x-role="confirmation-no" id="double-confirmation-no" class="no">جی نہیں</a>
+        </div>
+
+    <ejs> } </ejs>
+
+    <!-- NUMBER ENTRY -->
+    <ejs> if (state == "number-entry") { </ejs>
+
+        <form method="POST" id="number-entry" action="<ejs>= nextUrl </ejs>">
+            <label data-x-role="enter-number">اپنا موبائل نمبر درج کریں</label>
+            <div class="arrow-wrap number">
+                <input type="tel" id="number" name="number" maxlength="11" value="03">
+                <img src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/arrows-entry-one.gif">
+            </div>
+            <input id="submit-number" class="button" src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/submit-btns/submit-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ur.gif" data-x-role="enter-number-submit" type="image" value="Submit">
+            <ejs> if (typeof(alreadySubscribedError) != "undefined") { </ejs>
+                <div id="already-subscribed-error" data-x-role="already-subscribed-error" class="error">آپ پہلے سے ہی اس سروس کے سبسکرائبر ہیں</div>
+            <ejs> } </ejs>
+            <ejs> if (typeof(invalidNumberError) != "undefined") { </ejs>
+                <div id="invalid-number-error" data-x-role="invalid-number-error" class="error">یہ نمبر درست نہیں ہے،دوبارہ درج کریں</div>
+            <ejs> } </ejs>
+        </form>
+
+    <ejs> } </ejs>
+
+    <!-- PIN ENTRY -->
+    <ejs> if (state == "pin-entry") { </ejs>
+
+        <form method="POST" id="pin-entry" action="<ejs>= nextUrl </ejs>">
+            <label data-x-role="" class="big">آپ کو میسج کے ذریعے پن موصول ہو گا ،اپنی سبسکرپشن کو کونفرم کرنے کے لئے. پن کوڈ یہاں درج کریں</label>
+            <div class="arrow-wrap pin">
+                <input type="tel" id="pin" name="pin" maxlength="4">
+                <img src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/arrows-pin-one.gif">
+            </div>
+            <input class="button" src="/creatives/FitnessTips/feature/pk/mobilink/ur/default/img/submit-btns/submit-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ur.gif" data-x-role="pin-entry-submit" id="submit-pin" type="image" value="Submit">
+            <ejs> if (typeof(invalidPinError) != "undefined") { </ejs>
+                <div id="invalid-pin-error" data-x-role="invalid-pin-error" class="error">یہ پن کوڈ صحیح نہیں ہے</div>
+            <ejs> } </ejs>
+        </form>
+
+    <ejs> } </ejs>
+
+    <!-- MO MESSAGE -->
+    <ejs> if (state == "mo") { </ejs>
+
+        <div id="mo">
+            <div data-x-role="subscription-info-mo-sms" class="info">آپ سبسکرائبر بننے سے صرف ١ قدم دور ہیں</div>
+            <h3 data-x-role="mo-sms">sms</h3>
+            <span id="keyword"><ejs>= keyword </ejs></span>
+            <h3 data-x-role="mo-to">براے</h3>
+            <span id="short-code"><ejs>= shortCode </ejs></span>
+        </div>
+
+    <ejs> } </ejs>
+
+    <!-- CONGRATS -->
+    <ejs> if (state == "congrats") { </ejs>
+
+        <div id="congrats">
+            <h3 data-x-role="congrats">مبارک ہو</h3>
+            <span data-x-role="successfully-subscribed">آپ اس سروس کے لئے کامیابی سے سبسکرائب ہو چکے ہیں</span>
+        </div>
+
+    <ejs> } </ejs>
+
+    <!-- LANGUAGE BUTTON -->
+    <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+        <a href="<ejs>= setLanguage('') </ejs>" id="language" class="language-btn" style="display:none;">
+            <!-- img src="/public/img/language/.gif" -->
+        </a>
+
+    <ejs> } </ejs>
+
+    <!-- DISCLAIMER -->
+    <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+        <div class="disclaimer" data-x-role="disclaimer">
+            کاپی رائٹ © 2015 * Mobilink، پاکستان کے لئے Mobile Academy کی خدمات کے سبسکرائبرز کو نئے اور حیرت انگیز کورسز سیکھنے کے لئے11.95  پاکستانی روپئے فی پیغام کے حساب سے 3 ہفتہ کے لئے ہر  ہفتہ 3 پیغامات موصول ہونگے۔ اگر آپ اس خدمت کو استعمال کرنا جاری رکھیں تو آپ کی رکنیت کی تجدید کی جائے گی۔
+            <a href="http://m.mobileacademy.com/Home/Terms?x-lang=ur" target="_blank" style="color:#999">شرائط و ضوابط</a>
+        </div>
+
+    <ejs> } </ejs>
+
+    <ejs> if (typeof(pageReadyPixel) != "undefined") { </ejs>
+        <img data-ignore-prefixation="" src="<ejs>= pageReadyPixel </ejs>">
+    <ejs> } </ejs>
+
+</body>
+
+</html>

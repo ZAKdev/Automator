@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta name="stage" value="development">
+        <meta name="suffix" value="feature-ae-du-en-default">
+        <meta name="creative" value="AppleWatch">
+        <meta name="page-id" value="1054">
+        <meta name="service" value="Mobile Academy">
+        <meta name="platform" value="dumb">
+        <meta name="operator" value="du">
+        <meta name="one-file" value="false">
+        <meta name="language" value="en">
+        <meta name="jira-task-id" value="WAP-2417">
+        <meta name="country" value="ae">
+        <meta name="test-campaign" value="16836">
+        <meta name="author" value="suneesh">
+        <meta name="double-confirmation" value="true">
+        <meta charset="utf-8">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+        <ejs> if (state == "congrats" && redirect == true) { </ejs>
+                <meta http-equiv="refresh" content="<ejs>= interval </ejs>; url=<ejs>= nextUrl </ejs>">
+        <ejs> } </ejs>
+        <title data-c-role="title">Mobile Academy</title>
+        <link href="/public/dumb-css/reset.css" rel="stylesheet">
+        <link href="/public/dumb-css/points.css" rel="stylesheet">
+        <link href="/public/dumb-css/layout.css" rel="stylesheet">
+        <link href="/creatives/AppleWatch/z-shared/dumb-css/main.css" rel="stylesheet">
+
+    <meta name="postfix" value="default"></head>
+
+    <body class="res<ejs>= resolution </ejs>">
+
+        <!-- PRICE HEADER -->
+        <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+            <div data-x-role="price" class="pricing">AED 15 for 7 days or AED 2.4 for 1 day</div>
+
+        <ejs> } </ejs>
+
+        <!-- WAP MAIN HEADER -->
+        <ejs> if (state != "double-confirmation" && state != "pin-entry" && state != "mo" && state != "congrats") { </ejs>
+
+            <div class="banner">
+                <img src="/creatives/AppleWatch/feature/ae/du/en/default/img/headers/header-<ejs>= headerOrientation </ejs><ejs>= headerWidth </ejs>-en.jpg" alt="Get Rich"> 
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- WAP SUB HEADER -->
+        <ejs> if (state != "default-state" && state != "number-entry") { </ejs>
+
+            <div class="confirmation-banner">
+                <img src="/creatives/AppleWatch/feature/ae/du/en/default/img/sub-headers/sub-header-<ejs>= subHeaderOrientation </ejs><ejs>= subHeaderWidth </ejs>-en.jpg" alt="Get Rich">
+            </div>
+        
+        <ejs> } </ejs>
+
+        <!-- DEFAULT STATE -->
+        <ejs> if (state == "default-state") { </ejs>
+
+            <div id="default-state">
+
+                <div class="info">
+                    <a href="<ejs>= nextUrl </ejs>">Click Here</a> 
+                    <span data-c-role="click-here-message"> or sms SUB LEARN to 2215 to subscribe to Mobile Academy and learn amazing courses on your mobile!</span>
+                </div>
+                <a href="<ejs>= nextUrl </ejs>" id="subscribe" class="button">
+                    <span data-x-role="subscribe-now"><img src="/creatives/AppleWatch/feature/ae/du/en/default/img/subscribe-btns/subscribe-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-en.gif"></span>
+                </a>
+
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- DOUBLE CONFIRMATION -->
+        <ejs> if (state == "double-confirmation") { </ejs>
+
+            <div id="double-confirmation">
+
+                <div data-x-role="subscription-info-double-confirmation" class="info"> You will be subscribed to this service. Subscription will be automatically renewed until you unsubscribe. </div>
+                <div class="price">AED 15 for 7 days or AED 2.4 for 1 day</div>
+                <div class="info-highlight">Press "YES" to confirm your subscription:</div>
+                <a href="<ejs>= yesUrl </ejs>" id="confirm" class="button"> <span data-x-role="confirmation-yes"><img src="/creatives/AppleWatch/feature/ae/du/en/default/img/yes-btns/yes-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-en.gif"></span> </a>
+                <a href="<ejs>= noUrl </ejs>" data-x-role="confirmation-no" id="double-confirmation-no" class="no">No</a>
+
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- NUMBER ENTRY -->
+        <ejs> if (state == "number-entry") { </ejs>                        
+
+            <form method="POST" id="number-entry">
+                <label data-x-role="enter-number">Enter your mobile number</label>
+                <div class="arrow-wrap number">
+                    <input type="tel" id="number" name="number" maxlength="10" value="05">
+                    <img src="/creatives/AppleWatch/z-shared/dumb-img/arrows-entry-one.gif" alt="">
+                </div>                            
+                <input id="submit-number" class="button" src="/creatives/AppleWatch/feature/ae/du/en/default/img/submit-btns/submit-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-en.gif" data-x-role="enter-number-submit" type="image" value="Submit">
+                <ejs> if (typeof(alreadySubscribedError) != "undefined") { </ejs> 
+                        <div id="already-subscribed-error" data-x-role="already-subscribed-error" class="error">You are already subscribed to this service</div>
+                <ejs> } </ejs>
+                <ejs> if (typeof(invalidNumberError) != "undefined") { </ejs> 
+                        <div id="invalid-number-error" data-x-role="invalid-number-error" class="error">Please enter a valid number</div>
+                <ejs> } </ejs>
+            </form>
+
+        <ejs> } </ejs>
+
+        <!-- PIN ENTRY -->
+        <ejs> if (state == "pin-entry") { </ejs>
+
+            <form method="POST" id="pin-entry">
+                <label data-x-role="pin-entry-help" class="small">You will be charged AED 15 for 7 days or AED 2.4 for 1 day. Your subscription will be renewed automatically.</label>
+                <label data-x-role="" class="big">Enter the PIN code below:</label>
+                <div class="arrow-wrap pin">
+                    <input type="tel" id="pin" name="pin" maxlength="4">
+                    <img src="/creatives/AppleWatch/z-shared/dumb-img/arrows-pin-one.gif" alt="">
+                </div>
+                <input class="button" src="/creatives/AppleWatch/feature/ae/du/en/default/img/submit-btns/submit-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-en.gif" data-x-role="pin-entry-submit" id="submit-pin" type="image" value="Submit">
+                <ejs> if (typeof(invalidPinError) != "undefined") { </ejs>
+                        <div id="invalid-pin-error" data-x-role="invalid-pin-error" class="error">You entered a wrong PIN</div>
+                <ejs> } </ejs>
+            </form>
+
+        <ejs> } </ejs>
+
+        <!-- MO MESSAGE -->
+        <ejs> if (state == "mo") { </ejs>
+
+            <div id="mo">
+                <div data-x-role="subscription-info-mo-sms" class="info">You will be charged AED 15 for 7 days or AED 2.4 for 1 day. Your subscription will be renewed automatically.</div>
+                <h3 data-x-role="mo-sms">sms</h3>
+                <span id="keyword"><ejs>= keyword </ejs></span>
+                <h3 data-x-role="mo-to">to</h3>
+                <span id="short-code"><ejs>= shortCode </ejs></span>
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- CONGRATS -->
+        <ejs> if (state == "congrats") { </ejs>
+
+            <div id="congrats">
+                <h3 data-x-role="congrats">Congratulations</h3>
+                <span data-x-role="successfully-subscribed">You have been successfully subscribed to the service</span>
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- LANGUAGE BUTTON -->
+        <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+            <a href="<ejs>= setLanguage('ar') </ejs>" id="language" class="language-btn">
+                <img src="/creatives/AppleWatch/feature/ae/du/en/default/img/ar-uae.gif" alt="">
+            </a>
+
+        <ejs> } </ejs>
+
+        <!-- DISCLAIMER -->
+        <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+            <div class="disclaimer" data-x-role="disclaimer"> 
+                For du users: On subscribing to the Mobile Academy service, you will receive 3 messages every week for AED 15 per week or AED 2.4 per day to learn new and amazing courses directly from your mobile phone. Your subscription will be renewed automatically. You can unsubscribe from this service by sending UNSUB LEARN to 2215. By subscribing to the service you are accepting all Terms &amp; Conditions of the service &amp;  authorize du to share your mobile number with Mobile Academy. To make use of this service you must be more than 18 years old or have received permission from your parents or person who is authorized to pay your bill. Mobile Academy works in accordance with the international code of conduct for SMS services. Copyright © 2015.
+                <a href="http://m.mobileacademy.com/Home/Terms?x-lang=en" target="_blank">Terms &amp; Conditions</a> 
+            </div>
+
+        <ejs> } </ejs>
+
+        <ejs> if (typeof(pageReadyPixel) != "undefined") { </ejs>
+                <img data-ignore-prefixation="" src="<ejs>= pageReadyPixel </ejs>">
+        <ejs> } </ejs>       
+
+    </body>
+
+</html>

@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="stage" value="qa">
+    <meta name="suffix" value="html5-au-_-en-default">
+    <meta name="creative" value="TrainYourBrain">
+    <meta name="page-id" value="2131">
+    <meta name="service" value="Mobile Academy">
+    <meta name="platform" value="html5">
+    <meta name="operator" value="_">
+    <meta name="one-file" value="false">
+    <meta name="language" value="en">
+    <meta name="jira-task-id" value="WAP-7730">
+    <meta name="country" value="au">
+    <meta name="author" value="Genesis">
+    <meta name="test-campaign" value="18683">
+    <meta charset="utf-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <title data-c-role="title">Academy on the Move</title>
+    <meta name="postfix" value="default">
+
+    <!-- Global Styles -->
+    <link href="/creatives/TrainYourBrain/assets/css/main.css" rel="stylesheet">
+    <link href="/creatives/TrainYourBrain/assets/css/custom-au.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="container" class="show-subscribe-button">
+
+        <div id="content">
+
+            <div id="creative-content">
+                <div class="title"></div>
+                <div class="title2"></div>
+                <div id="main-img"></div>
+                <div id="dcimg"></div>
+                <div class="ma_logo" style="background-image:url(/creatives/TrainYourBrain/assets/img/am_logo.png);background-size:120px 19px;"></div>
+                <div class="blub"></div>
+                <div class="shine"></div>
+            </div>
+            <div class="dog"></div>
+            <div class="cat"></div>
+
+            <div data-x-role="price" class="price-info">Subscription service $8.99/week</div>
+
+            <!-- ERROR STATE -->
+            <div id="error" style="display:none">
+                <p>Sorry , we are unable to subscribe you at this moment!</p>
+            </div>
+
+            <!-- DEFAULT STATE -->
+            <div id="default-state">
+                <!-- span data-x-role="subscription-info" id="message">Discover the mysteries of the mind in over 50 premium courses!</span -->
+                <a href="javascript:void(0)" id="subscribe" class="btn subscribe pulse">
+                    <span data-x-role="subscribe-now" style="font-size:25px;display:block;margin-top:0px">Subscribe Now!</span>
+                </a>
+                <a href="https://www.google.com" target="_top" class="back">
+                    <span data-x-role="subscribe-now">Back</span>
+                </a>
+            </div>
+
+            <!-- DOUBLE CONFIRMATION -->
+            <div id="double-confirmation" style="display: none"> 
+                <span data-x-role="subscription-info" class="subscription-info">You will be charged $8.99/week. Your subscription will be renewed automatically.</span>
+                <a href="javascript:void(0)" id="confirm" class="btn default green pulse">
+                    <span data-x-role="confirmation-yes">YES</span>
+                </a>
+                <span data-x-role="confirmation-no" id="double-confirmation-no">No</span>
+            </div>
+
+            <!-- SUBSCRIPTION POLLING -->
+            <div id="subscription-polling" style="display: none">
+                <span data-x-role="subscription-info" class="subscription-info">Processing subscription...</span>
+                <div id="loader" class="preloader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div> 
+
+            <!-- NUMBER ENTRY -->
+            <form id="number-entry" style="display:none">
+                <label data-x-role="enter-number">Enter your mobile number</label>
+                <input type="tel" id="number" maxlength="10" value="05">
+                <a href="javascript:void(0)" id="submit-number" class="btn default green pulse">
+                    <span data-x-role="number-entry-submit">Continue</span>
+                </a>
+                <div id="already-subscribed-error" data-x-role="already-subscribed-error" style="display: none">You are already subscribed to this service</div>
+                <div id="invalid-number-error" data-x-role="invalid-number-error" style="display: none">Please enter a valid number</div>
+            </form>
+
+            <!-- PIN ENTRY -->
+            <form id="pin-entry" style="display:none">
+                <label data-x-role="pin-entry-help"> 
+                    <strong>You will now receive an sms with pin code.</strong> 
+                    <span>To confirm your subscription enter the PIN code below</span>
+                </label>
+                <input type="tel" id="pin" maxlength="4">
+                <a href="javascript:void(0)" id="submit-pin" class="btn default green pulse">
+                    <span data-x-role="pin-entry-submit">Submit</span>
+                </a>
+                <div id="invalid-pin-error" data-x-role="invalid-pin-error" style="display:none1">You entered a wrong PIN</div>
+            </form>
+
+            <!-- MO MESSAGE -->
+            <div id="mo" style="display:none">
+                <span data-x-role="subscription-info" class="subscription-info">Your subscription will be renewed automatically.</span>
+                <h3 data-x-role="mo-sms">sms</h3>
+                <div id="keyword">KWORD</div>
+                <h3 data-x-role="mo-to">to</h3>
+                <div id="short-code">SCODE</div>
+            </div>
+
+            <!-- CONGRATS -->
+            <div id="congrats" style="display:none">
+                <h3 data-x-role="congrats">Congratulations</h3>
+                <h6 data-x-role="successfully-subscribed">You have just subscribed to Academy On The Move Service and will be charged $8.99/wk until you unsubscribe. You will be redirected shortly...</h6>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="msgcond" data-c-role="benefit">
+                Subscribe to Academy on the Move and get <br> <b>unlimited</b> access to over <b>100</b> courses on your mobile.
+            </div>
+            <div data-x-role="disclaimer" id="disclaimer">
+                Charges will be made on your mobile or deducted from your prepaid account. Carriage fees or data charges may apply. Support? Contact us or call 1300 663 881. By clicking “Subscribe” you agree to be subscribing for $8.99/wk and that you are the owner of this device and be at least 18 years old or have the permission of your parent or guardian and agree to these Terms. SMS STOP to 19789103. You will receive access to over 100 courses, average data size 400kb.<br><br>
+                <a href="http://staticl.aotm.me/resource?service=3100&country=au&resource=terms&operator=lp&language=en" target="_blank" class="link">Terms and Conditions</a>
+            </div>
+        </div>
+
+        <script type="text/javascript" data-ignore-renderer=""><ejs>- include "public/partials/mobi-one-constants.ejs"</ejs></script>
+        <ejs>include "/public/partials/mobi-one-html5-scripts.ejs"</ejs>
+        <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+        <ejs>include "/public/partials/image-pixel.ejs"</ejs>
+
+    </div>
+
+</body>
+</html>

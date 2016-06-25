@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="stage" value="qa">
+    <meta name="suffix" value="html5-ae-du-en-default">
+    <meta name="creative" value="FitnessTips">
+    <meta name="page-id" value="1329">
+    <meta name="service" value="Mobile Academy">
+    <meta name="platform" value="html5">
+    <meta name="operator" value="du">
+    <meta name="one-file" value="false">
+    <meta name="language" value="en">
+    <meta name="jira-task-id" value="WAP-7998">
+    <meta name="country" value="ae">
+    <meta name="author" value="Shane">
+    <meta name="test-campaign" value="12719">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <title data-c-role="title">Mobile Academy</title>
+    <!-- Global Assets -->
+    <link href="/creatives/FitnessTips/assets/css/main.css" rel="stylesheet">
+    <link href="/creatives/FitnessTips/html5/ae/du/en/default/css/custom-du.css" rel="stylesheet">
+    <meta name="postfix" value="default">
+</head>
+
+<body class="en">
+    <div id="container" class="show-subscribe-button">
+        <div data-x-role="price" class="price" style="font-size:12px">AED 15 for 7 days or AED 2.4 for 1 day.</div>
+
+        <!-- Design Content -->
+        <div id="page-content">
+            <div id="woman"></div>
+            <div id="man"></div>
+            <div id="title"></div>
+            <div id="ribbon"></div>
+        </div>
+
+        <div class="confirmError show">
+            Sorry, in order to subscribe, you need to accept the terms and conditions by ticking the below check box
+        </div>
+
+        <!-- SUBSCRIBE BUTTON -->
+        <div id="default-state">
+        <div style="visibility: hidden;">
+            <a href="javascript:void(0)" id="confirmedBtnBlock"></a>
+            <a href="javascript:void(0)" class="confirmBtn">
+                <span class="marker"></span>
+                <span class="markerText">
+                    <strong>I ACCEPT</strong>the Terms and Conditions
+                </span>
+            </a>
+            <a href="javascript:void(0)" id="subscribe-now"  class="confirmedBtn subscribe default">
+                <strong>CONFIRM</strong>
+            </a>
+            </div>
+        </div>
+
+                <!-- IFRAME STATE -->
+                <div id="iframe-state" style="display: none">
+
+                <iframe id="iframe-confirmation" scrolling="no" style="background: none;"></iframe>
+                
+                </div>    
+
+        <!-- DOUBLE CONFIRMATION -->
+        <div id="double-confirmation" style="display:none">
+            <span data-x-role="subscription-info-double-confirmation" id="double-confirmation-message">
+                You will be charged AED 15 for 7 days or AED 2.4 for 1 day. Your subscription will be renewed automatically.
+            </span>
+            <a href="javascript:void(0)" id="confirm" class="btn">
+                <span data-x-role="confirmation-yes">YES</span>
+            </a>
+            <span data-x-role="confirmation-no" id="double-confirmation-no">No</span>
+        </div>
+
+        <!-- SUBSCRIPTION POLLING -->
+        <div id="subscription-polling" style="display:none">
+            <span data-x-role="subscription-info" class="subscription-info">Processing Subscription...</span>
+            <div id="loader"></div>
+        </div>
+
+        <!-- NUMBER ENTRY -->
+        <form id="number-entry" style="display:none">
+            <label data-x-role="enter-number">Enter your mobile number</label>
+            <input type="tel" id="number" maxlength="10" value="05">
+            <a href="javascript:void(0)" id="submit-number" class="btn">
+                <span data-x-role="number-entry-submit">Continue</span>
+            </a>
+            <div id="already-subscribed-error" data-x-role="already-subscribed-error" style="display:none">You are already subscribed to this service</div>
+            <div id="invalid-number-error" data-x-role="invalid-number-error" style="display:none">Please enter a valid number</div>
+        </form>
+
+        <!-- PIN ENTRY -->
+        <form id="pin-entry" style="display:none">
+            <div id="pin-notification" class="fadeInUp show">
+                <img src="/creatives/FitnessTips/assets/img/pin-icon.png" width="50" height="50" alt=""/>
+                <p>A 4 digit PIN number have been sent to your mobile number.</p>
+            </div>
+            <label data-x-role="pin-entry-help">Please enter the PIN code below</label>
+            <input type="tel" id="pin" maxlength="4" placeholder="××××">
+            <a href="javascript:void(0)" id="submit-pin" class="btn">
+                <span data-x-role="pin-entry-submit">Submit</span>
+            </a>
+            <div id="invalid-pin-error" data-x-role="invalid-pin-error" style="display:none1">You entered a wrong PIN</div>
+        </form>
+
+        <!-- MO MESSAGE -->
+        <div id="mo" style="display:none">
+            <span data-x-role="subscription-info" id="mo-message">You will be charged AED 15 for 7 days or AED 2.4 for 1 day. Your subscription will be renewed automatically.</span>
+            <h3 data-x-role="mo-sms">sms</h3>
+            <div id="keyword">{keyword}</div>
+            <h3 data-x-role="mo-to">to</h3>
+            <div id="short-code">{shortcode}</div>
+        </div>
+
+        <!-- CONGRATS -->
+        <div id="congrats" style="display:none">
+            <h3 data-x-role="congrats">Congratulations!</h3>
+            <h6 data-x-role="successfully-subscribed">You have been successfully subscribed<br>to the service</h6>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <span style="color:#BDBDBD;font-size:11px">
+                By clicking on the "Confirm" button, you will be charged AED 15 per week or AED 2.4 daily. This will be deducted from your prepaid balance or charged on your postpaid monthly bill.
+            </span>
+            <p data-x-role="disclaimer">
+                Copyright © 2016 Subscribers of Mobile Academy service will get access to learn new and amazing courses for AED 15 per week or AED 2.4 per day. Your subscription will be renewed automatically. For HELP call Toll Free 8004001. You can unsubscribe by sending UNSUB LEARN to 2215. Mobitrans FZ LLC, P.O Box 502580, Dubai, UAE.
+            </p>
+        </div>
+
+        <script type="text/javascript" data-ignore-renderer=""><ejs>-include "public/partials/mobi-one-constants.ejs" </ejs></script>
+        <script>
+            <ejs>include "/public/partials/mobi-one-html5-scripts.ejs"</ejs>
+        </script>
+        <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+        <script>
+            <ejs>include "/public/partials/image-pixel.ejs"</ejs>
+        </script>
+    </div>
+</body>
+</html>

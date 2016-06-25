@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="stage" value="development">
+    <meta name="suffix" value="mraid-au-_-en-google">
+    <meta name="creative" value="FitnessTips">
+    <meta name="page-id" value="2147">
+    <meta name="service" value="Mobile Academy">
+    <meta name="platform" value="mraid">
+    <meta name="operator" value="_">
+    <meta name="one-file" value="false">
+    <meta name="language" value="en">
+    <meta name="jira-task-id" value="WAP-7732">
+    <meta name="country" value="au">
+    <meta name="author" value="suneesh">
+    <meta name="test-campaign" value="18683">
+    <meta charset="utf-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <title data-c-role="title">Academy on the move</title>
+    <link href="/creatives/FitnessTips/assets/css/main.css" rel="stylesheet">
+    <link href="/creatives/FitnessTips/mraid/au/_/en/google/css/custom-du.css" rel="stylesheet">
+    <meta name="postfix" value="google">
+</head>
+
+<body>
+    <!-- MRAID -->
+    <div id="container" class="show-subscribe-button">
+
+        <a href="javascript:void(0)" id="mraid-close"></a>
+        <!-- Design Content -->
+        <div id="page-content">
+            <div id="woman"></div>
+            <div id="man"></div>
+            <div id="title" class="am"></div>
+            <div id="ribbon"></div>
+        </div>
+
+        <div data-x-role="price" class="price" style="font-size:14px">
+            Subscription service $8.99/wk
+        </div>
+
+        <!-- SUBSCRIBE BUTTON -->
+        <div id="default-state">
+            <a href="javascript:void(0)" class="btn2 subscribe">
+                <span data-x-role="subscribe-now">SUBSCRIBE NOW</span>
+            </a>
+            <a href="https://www.google.com" target="_top" class="back">
+                <span>Back</span>
+            </a>
+        </div>
+
+        <!-- DOUBLE CONFIRMATION -->
+        <div id="double-confirmation" style="display:none">
+            <span data-x-role="subscription-info-double-confirmation" id="double-confirmation-message">You will be charged $8.99/wk. Your subscription will be renewed automatically.</span>
+
+            <div class="title-dopt"></div>
+            <div class="timer counter"><u id="count">01:00</u> left to CONFIRM</div>
+            
+            <a href="javascript:void(0)" id="confirm" class="btn2">
+                <span data-x-role="confirmation-yes">YES</span>
+            </a>
+            <span data-x-role="confirmation-no" id="double-confirmation-no" class="no">No</span>
+        </div>
+
+        <!-- SUBSCRIPTION POLLING -->
+        <div id="subscription-polling" style="display:none">
+            <span data-x-role="subscription-info" class="subscription-info">Processing Subscription...</span>
+            <div id="loader"></div>
+        </div>
+
+        <!-- NUMBER ENTRY -->
+        <form id="number-entry" style="display:none">
+            <label data-x-role="enter-number" for="number">Enter your mobile number</label>
+            <input type="tel" id="number" maxlength="10" value="05">
+            <a href="javascript:void(0)" id="submit-number" class="btn">
+                <span data-x-role="number-entry-submit">Continue</span>
+            </a>
+            <div id="already-subscribed-error" data-x-role="already-subscribed-error" style="display:none">You are already subscribed to this service</div>
+            <div id="invalid-number-error" data-x-role="invalid-number-error" style="display:none">Please enter a valid number</div>
+        </form>
+
+        <!-- PIN ENTRY -->
+        <form id="pin-entry" style="display:none">
+            <label data-x-role="subscription-info-pin-entry" for="pin"></label>
+            <input type="tel" id="pin" maxlength="4">
+            <a href="javascript:void(0)" id="submit-pin" class="btn">
+                <span data-x-role="pin-entry-submit">Submit</span>
+            </a>
+            <div id="invalid-pin-error" data-x-role="invalid-pin-error" style="display:none">You entered a wrong PIN</div>
+        </form>
+
+        <!-- MO MESSAGE -->
+        <div id="mo" style="display:none">
+            <span data-x-role="subscription-info" id="mo-message"></span>
+            <h3 data-x-role="mo-sms">sms</h3>
+            <div id="keyword">{keyword}</div>
+            <h3 data-x-role="mo-to">to</h3>
+            <div id="short-code">{shortcode}</div>
+        </div>
+
+        <!-- CONGRATS -->
+        <div id="congrats" style="display:none">
+            <h3 data-x-role="congrats">Congratulations!</h3>
+            <h6 data-x-role="successfully-subscribed">
+            You have just subscribed to Academy On The Move Service and will be charged $8.99/wk until you unsubscribe. You will be redirected shortly... </h6>
+        </div>
+
+        <!-- ERROR STATE -->
+        <div id="error" style="display:none">
+            <div class="error">Sorry, we are unable to subscribe you at this moment!</div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div id="msg">Subscribe to Academy on the Move and get <br> <b>unlimited</b> access to over 100 courses on your mobile.</div>
+
+        <div class="disclaimer">
+            Charges will be made on your mobile or deducted from your prepaid account. Carriage fees or data charges may apply. Support? Contact us or call 1300 663 881. By clicking “Subscribe” you agree to be subscribing for $8.99/wk and that you are the owner of this device and be at least 18 years old or have the permission of your parent or guardian and agree to these Terms. SMS STOP to 19789103. You will receive access to over 100 courses, average data size 400kb.
+        </div>
+
+        <a href="http://staticl.aotm.me/resource?service=3100&country=au&resource=terms&operator=lp&language=en" target="_blank" class="link">Terms and Conditions</a>
+
+        <script type="text/javascript" data-ignore-renderer=""><ejs>-include "public/partials/mobi-one-constants.ejs" </ejs></script>
+        <script type="text/javascript" dont-minify="" src="mraid.js"></script>
+        <ejs>include "/public/partials/mraid-google-scripts.ejs"</ejs>
+        <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+    </div>
+</body>
+
+</html>

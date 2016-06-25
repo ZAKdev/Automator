@@ -1,0 +1,292 @@
+body {
+    background-color: #041535;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    /* For some Androids */
+}
+
+.price-info {
+    line-height: 14px;
+    padding: 3px 0px;
+}
+
+.malogo {
+    top: 45px;
+}
+
+.label {
+    top: 70px;
+}
+
+.catdog {
+    top: 110px;
+}
+
+#or {
+    top: 290px;
+}
+
+.answer {
+    top: 280px;
+}
+
+#click-here {
+    display: block;
+    margin: 0;
+    padding: 0 !important;
+    background: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #6992ae;
+}
+
+#click-here a {
+    color: #fff;
+}
+
+#click-here .msg {
+    font-weight: normal;
+}
+
+#container.show-subscribe-button .view-area,
+#container.show-default-state .view-area {
+    height: 400px !important;
+}
+
+#container.show-double-confirmation .view-area {
+    height: 425px !important;
+}
+
+#container.show-double-confirmation #click-here {
+    display: none;
+}
+
+.disclaimer {
+    padding: 0 0 10px !important;
+    display: block;
+    background: none;
+    line-height: 14px;
+    font-size: 11px;
+}
+
+.disclaimer img {
+    width: 110px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#default-state .btn {
+    width: 240px;
+    height: 30px;
+    padding: 10px;
+    background: #2eb4ff;
+    background: -moz-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    background: -webkit-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    background: linear-gradient(to bottom, #69dcff 0%, #2eb4ff 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#69dcff', endColorstr='#2eb4ff', GradientType=0);
+    -webkit-box-shadow: inset 0px -3px 0px 0px rgba(18, 107, 170, 0.9);
+    -moz-box-shadow: inset 0px -3px 0px 0px rgba(18, 107, 170, 0.9);
+    box-shadow: inset 0px -3px 0px 0px rgba(18, 107, 170, 0.9);
+}
+
+#double-confirmation .btn {
+    width: 240px;
+    height: 30px;
+    padding: 10px;
+    background: #f7c43a;
+    background: -moz-linear-gradient(top, #fcd25f 0%, #f7c43a 100%);
+    background: -webkit-linear-gradient(top, #fcd25f 0%, #f7c43a 100%);
+    background: linear-gradient(to bottom, #fcd25f 0%, #f7c43a 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fcd25f', endColorstr='#f7c43a', GradientType=0);
+    -webkit-box-shadow: inset 0px -3px 0px 0px rgba(192, 144, 11, 1);
+    -moz-box-shadow: inset 0px -3px 0px 0px rgba(192, 144, 11, 1);
+    box-shadow: inset 0px -3px 0px 0px rgba(192, 144, 11, 1);
+}
+
+#default-state .btn span {
+    color: #061536;
+    display: block;
+    font-size: 23px;
+    letter-spacing: -0.6px;
+    padding-top: 4px;
+}
+
+#double-confirmation .btn span {
+    color: #061536;
+    display: block;
+    font-size: 23px;
+    letter-spacing: -0.6px;
+}
+
+#double-confirmation {
+    visibility: visible;
+    font-size: 11px;
+    line-height: normal;
+    color: #6992ae;
+    text-align: center;
+}
+
+#sub-message {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+#double-confirmation-no {
+    font-size: 13px !important;
+    color: #4E79B6;
+}
+
+#double-confirmation-message {
+    display: block;
+    margin: 5px 0 10px;
+    line-height: 14px;
+    color: #98E5FD;
+}
+
+.catdog.accept {
+    top: 50px;
+}
+
+.label.accept {
+    top: 200px;
+}
+
+.timer {
+    top: 260px;
+    color: #fff;
+}
+
+#default-state .hotspot {
+    position: absolute;
+    width: 100%;
+    height: 118px;
+    bottom: 0;
+}
+
+.label.accept,
+.catdog.accept,
+.timer.accept {
+    animation: fadein 0.7s ease-in-out 1;
+    -webkit-animation: fadein 0.7s ease-in-out 1;
+}
+
+.timer.accept {
+    animation: fadein 1.5s ease-in-out;
+    -webkit-animation: fadein 1.5s ease-in-out;
+}
+
+@keyframes fadein {
+    0% {
+        transform: translate(0, 25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 100;
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        transform: translate(0, 25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 100;
+    }
+}
+
+.label.accept {
+    background: url(/creatives/TrainYourBrain/assets/img/label_state_02.png) center top no-repeat;
+    background-size: 290px;
+    height: 60px;
+}
+
+.catdog.accept {
+    background: url(/creatives/TrainYourBrain/assets/img/mind-img.png) center top no-repeat;
+    background-size: 180px;
+}
+
+.timer.accept {
+    display: block;
+}
+
+#or {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7DDFFF;
+    text-align: center;
+}
+
+.answer {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    right: 0px;
+    left: 0px;
+}
+
+.answer#cats {
+    background: url(/creatives/TrainYourBrain/assets/img/answer_cats.png) center top no-repeat;
+    background-size: 70px;
+    left: 230px;
+}
+
+.answer#dog {
+    background: url(/creatives/TrainYourBrain/assets/img/answer_dog.png) center top no-repeat;
+    background-size: 70px;
+    right: 230px;
+}
+
+.answer#cats {
+    animation: fadein 2.25s ease-in-out 1;
+    -webkit-animation: fadein 2.25s ease-in-out 1;
+}
+
+.answer#dog {
+    animation: fadein 1.25s ease-in-out 1;
+    -webkit-animation: fadein 1.25s ease-in-out 1;
+}
+
+#or {
+    animation: fadein 1.75s ease-in-out 1;
+    -webkit-animation: fadein 1.75s ease-in-out 1;
+}
+
+.timer {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+}
+
+#container.show-double-confirmation #or,
+#container.show-double-confirmation .answer,
+#container.show-double-confirmation .intro {
+    display: none;
+}
+
+#container.show-double-confirmation .timer {
+    display: block;
+}
+
+#container.show-default-state .accept,
+#container.show-subscribe-button .accept {
+    display: none;
+}

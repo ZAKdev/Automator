@@ -1,0 +1,75 @@
+
+#page-content #ribbon{
+    position: absolute;
+    display: block;
+    top: 108px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 120px;
+    height: 106px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/ribbon-du.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 120px 106px;
+    -moz-background-size: 120px 106px;
+    background-size: 120px 106px;
+    background-position: 50% 50%;
+}
+.price{
+    color:#fff;
+    font-weight: bold;
+    font-size: 12px !important;
+}
+#msg{
+    color:#999;
+    padding:10px;
+    font-weight: bold;
+    font-size:11px;
+    display: block;
+    margin-top:10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+.btn2{
+    color:#fff;
+    width:240px;
+    padding:15px 10px;
+    display: block;
+    font-size: 18px;
+    margin:0 auto;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43b9dd+0,277fc2+100 */
+background: #43b9dd; /* Old browsers */
+background: -moz-linear-gradient(top,  #43b9dd 0%, #277fc2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #43b9dd 0%,#277fc2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #43b9dd 0%,#277fc2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43b9dd', endColorstr='#277fc2',GradientType=0 ); /* IE6-9 */
+}
+#subscription-polling .subscription-info {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#subscription-polling #loader {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background: transparent url("/creatives/FitnessTips/assets/img/preloader.gif") no-repeat;
+    background-position: 50% 50%;
+    background-size: 32px 32px;
+}
+#container.show-congrats .price{
+    display:none !important;
+}
+
+#congrats h6{
+    color:#43B9DD;
+}

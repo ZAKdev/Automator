@@ -1,0 +1,341 @@
+/* $$$$$$$$$$$$ DU CHECKBOX FLOW $$$$$$$$$$$$ */
+
+/* Checkbox/Button */
+#sub-method-detection-request-preloader {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#btn-cbox {
+    position: relative;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    background: url("/creatives/FitnessTips/assets/img/btns_du.png") center center no-repeat;
+    background-position: center -5px;
+    
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    padding:11px 0;
+
+    -webkit-animation: dupulse 1.1s 25;
+    -moz-animation: dupulse 1.1s 25;
+    -ms-animation: dupulse 1.1s 25;
+    animation: dupulse 1.1s 25;
+}
+
+#btn-cbox span {
+    display: block;
+    margin-top: -2px;
+    padding-left: 85px;
+    outline: none;
+}
+
+#btn-cbox span#cbox-accept{
+    font-size:18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#btn-cbox span#cbox-desc{
+    font-size:12px;
+    color:#81DA6F;
+}
+
+#btn-cbox.disable span#cbox-accept{
+    color:#20B700;
+}
+#btn-cbox.disable span#cbox-desc{
+    color:#20B700;
+}
+
+#btn-cbox.disable{
+    background: url("/creatives/FitnessTips/assets/img/btns_du.png") center center no-repeat;
+    background-position: center -60px;
+    opacity: 0.9;
+    pointer-events:none;
+
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none;
+}
+
+/* Confirmation Button */
+.btn-confirm {
+    position: relative;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    background: url("/creatives/FitnessTips/assets/img/btns_du.png")  center center no-repeat;
+    background-position: center -115px;
+    
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding:15px 0;
+    
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.btn-confirm span{
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.btn-confirm.active{
+    opacity: 1;
+    pointer-events: auto;
+
+    animation: dupulse 1.1s 25;
+    -webkit-animation: dupulse 1.1s 25;
+    -moz-animation: dupulse 1.1s 25;
+    -ms-animation: dupulse 1.1s 25;
+}
+
+/* Hint popup */
+#wrongspot{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:9px;
+    width:290px;
+    height:50px;
+    padding: 0;
+
+    z-index: 999 !important;
+}
+
+#warning{
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    left:0;
+    right:0;
+    top:-55px;
+    background: rgba(0,0,0,0.7);
+    padding: 12px;
+    color:#ccc;
+    font-size: 11px;
+    border-radius: 12px;
+    text-align: center;
+    max-width:290px;
+}
+
+@-webkit-keyframes dupulse {
+    0% {
+        -webkit-transform: scale(0.98);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0.98);
+    }
+}
+
+@-moz-keyframes dupulse {
+    0% {
+        -moz-transform: scale(0.98);
+    }
+    50% {
+        -moz-transform: scale(1);
+    }
+    100% {
+        -moz-transform: scale(0.98);
+    }
+}
+
+@-ms-keyframes dupulse {
+    0% {
+        -ms-transform: scale(0.98);
+    }
+    50% {
+        -ms-transform: scale(1);
+    }
+    100% {
+        -ms-transform: scale(0.98);
+    }
+}
+
+@keyframes dupulse {
+    0% {
+        transform: scale(0.98);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.98);
+    }
+}
+
+/* Arrow */
+#container.show-default-state #arrow {
+  display: none;
+}
+
+/* Creative Shane */
+#page-content #title {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 175px;
+  height: 80px;
+  background: transparent;
+  background-repeat: no-repeat;
+  -webkit-background-size: 175px 80px;
+  -moz-background-size: 175px 80px;
+  background-size: 175px 80px;
+  background-position: 50% 50%;
+  background-image: url("/creatives/FitnessTips/assets/img/title-en-du.png");
+}
+
+#page-content #ribbon{
+    position: absolute;
+    display: block;
+    top: 108px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 120px;
+    height: 106px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/ribbon-du.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 120px 106px;
+    -moz-background-size: 120px 106px;
+    background-size: 120px 106px;
+    background-position: 50% 50%;
+}
+
+/* Subscription Polling */
+
+#subscription-polling .subscription-info {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+#subscription-polling #loader {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background: transparent url("/creatives/FitnessTips/assets/img/preloader.gif") no-repeat;
+    background-position: 50% 50%;
+    background-size: 32px 32px;
+}
+
+.price{
+    color:#fff;
+    font-weight: bold;
+    font-size: 12px !important;
+}
+
+.amLogo{
+    margin:10px auto;
+    width:200px;
+    display:block;
+}
+
+#msg{
+    color:#999;
+    padding:10px;
+    font-weight: bold;
+    font-size:11px;
+    display: block;
+    margin-top:10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1e1e1e;
+}
+
+.link{
+    color:#777;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+}
+
+.btn2{
+    color:#fff;
+    width:240px;
+    padding:15px 10px;
+    display: block;
+    font-size: 18px;
+    margin:0 auto;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43b9dd+0,277fc2+100 */
+background: #43b9dd; /* Old browsers */
+background: -moz-linear-gradient(top,  #43b9dd 0%, #277fc2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #43b9dd 0%,#277fc2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #43b9dd 0%,#277fc2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43b9dd', endColorstr='#277fc2',GradientType=0 ); /* IE6-9 */
+}
+
+#container.show-congrats .price{
+    display:none !important;
+}
+
+#congrats h6{
+    color:#43B9DD;
+}
+
+.back{
+    width:50px;
+    color:#777;
+    margin:0 auto;
+    display: block;
+    margin-top:10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#iframe-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 99;
+    background: #fff;
+    position: absolute;
+}
+
+#iframe-container iframe {
+    width: 100%;
+    height: 640px;
+    border: 0px;
+    visibility: visible;
+    overflowY: scroll;
+}
+
+.error{
+    color:red;
+    margin:10px 0;
+    display:block;
+    text-align:center;
+}

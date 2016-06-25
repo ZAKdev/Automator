@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta name="stage" value="development">
+        <meta name="suffix" value="feature-ae-du-ar-default">
+        <meta name="creative" value="AppleWatch">
+        <meta name="page-id" value="1055">
+        <meta name="service" value="Mobile Academy">
+        <meta name="platform" value="dumb">
+        <meta name="operator" value="du">
+        <meta name="one-file" value="false">
+        <meta name="language" value="ar">
+        <meta name="jira-task-id" value="WAP-2417">
+        <meta name="country" value="ae">
+        <meta name="test-campaign" value="16836">
+        <meta name="author" value="suneesh">
+        <meta name="double-confirmation" value="true">
+        <meta charset="utf-8">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+        <ejs> if (state == "congrats" && redirect == true) { </ejs>
+                <meta http-equiv="refresh" content="<ejs>= interval </ejs>; url=<ejs>= nextUrl </ejs>">
+        <ejs> } </ejs>
+        <title data-c-role="title">Mobile Academy</title>
+        <link href="/public/dumb-css/reset.css" rel="stylesheet">
+        <link href="/public/dumb-css/points.css" rel="stylesheet">
+        <link href="/public/dumb-css/layout.css" rel="stylesheet">
+        <link href="/creatives/AppleWatch/z-shared/dumb-css/main.css" rel="stylesheet">
+
+    <meta name="postfix" value="default"></head>
+
+    <body class="res<ejs>= resolution </ejs> ar">
+
+        <!-- PRICE HEADER -->
+        <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+            <div data-x-role="price" class="pricing">15 درهم في الأسبوع أو 2.4 درهم في اليوم</div>
+
+        <ejs> } </ejs>
+
+        <!-- WAP MAIN HEADER -->
+        <ejs> if (state != "double-confirmation" && state != "pin-entry" && state != "mo" && state != "congrats") { </ejs>
+
+            <div class="banner">
+                <img src="/creatives/AppleWatch/feature/ae/du/ar/default/img/headers/header-<ejs>= headerOrientation </ejs><ejs>= headerWidth </ejs>-ar.jpg" alt="Get Rich"> 
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- WAP SUB HEADER -->
+        <ejs> if (state != "default-state" && state != "number-entry") { </ejs>
+
+            <div class="confirmation-banner">
+                <img src="/creatives/AppleWatch/feature/ae/du/ar/default/img/sub-headers/sub-header-<ejs>= subHeaderOrientation </ejs><ejs>= subHeaderWidth </ejs>-ar.jpg" alt="Get Rich">
+            </div>
+        
+        <ejs> } </ejs>
+
+        <!-- DEFAULT STATE -->
+        <ejs> if (state == "default-state") { </ejs>
+
+            <div id="default-state">
+
+                <div class="info">
+                    <a href="<ejs>= nextUrl </ejs>">اضغط هنا</a> 
+                    <span data-c-role="click-here-message"> أو أرسل SUB LEARN الى 2215 لتشترك بخدمة Mobile Academy لتحصل على دروس رائعة على جوالك</span>
+                </div>
+                <a href="<ejs>= nextUrl </ejs>" id="subscribe" class="button">
+                    <span data-x-role="subscribe-now"><img src="/creatives/AppleWatch/feature/ae/du/ar/default/img/subscribe-btns/subscribe-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ar.gif"></span>
+                </a>
+
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- DOUBLE CONFIRMATION -->
+        <ejs> if (state == "double-confirmation") { </ejs>
+
+            <div id="double-confirmation">
+
+                <div data-x-role="subscription-info-double-confirmation" class="info">سوف يتم اشتراكك في هذه الخدمة. سيتم تجديد الاشتراك تلقائيا حتى إلغاء الاشتراك.</div>
+                <div class="price">15 درهم في الأسبوع أو 2.4 درهم في اليوم</div>
+                <div class="info-highlight">إضغط "نعم" لتأكيد اشتراكك:</div>
+                <a href="<ejs>= yesUrl </ejs>" id="confirm" class="button"> <span data-x-role="confirmation-yes"><img src="/creatives/AppleWatch/feature/ae/du/ar/default/img/yes-btns/yes-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ar.gif"></span> </a>
+                <a href="<ejs>= noUrl </ejs>" data-x-role="confirmation-no" id="double-confirmation-no" class="no">لا</a>
+
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- NUMBER ENTRY -->
+        <ejs> if (state == "number-entry") { </ejs>                        
+
+            <form method="POST" id="number-entry">
+                <label data-x-role="enter-number">أدخل رقم جوّالك</label>
+                <div class="arrow-wrap number">
+                    <input type="tel" id="number" name="number" maxlength="10" value="05">
+                    <img src="/creatives/AppleWatch/z-shared/dumb-img/arrows-entry-one.gif" alt="">
+                </div>                            
+                <input id="submit-number" class="button" src="/creatives/AppleWatch/feature/ae/du/ar/default/img/submit-btns/submit-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ar.gif" data-x-role="enter-number-submit" type="image" value="Submit">
+                <ejs> if (typeof(alreadySubscribedError) != "undefined") { </ejs> 
+                        <div id="already-subscribed-error" data-x-role="already-subscribed-error" class="error">أنت بالفعل مشترك بهذه الخدمة</div>
+                <ejs> } </ejs>
+                <ejs> if (typeof(invalidNumberError) != "undefined") { </ejs> 
+                        <div id="invalid-number-error" data-x-role="invalid-number-error" class="error">الرجاء إدخال رقم صحيح</div>
+                <ejs> } </ejs>
+            </form>
+
+        <ejs> } </ejs>
+
+        <!-- PIN ENTRY -->
+        <ejs> if (state == "pin-entry") { </ejs>
+
+            <form method="POST" id="pin-entry">
+                <label data-x-role="pin-entry-help" class="small">سوف تتم محاسبتك ب 15 درهم في الأسبوع أو 2.4 درهم في اليوم وسيتم تجديد اشتراكك تلقائيا.</label>
+                <label data-x-role="" class="big">أدخل الرقم السري في الأسفل:</label>
+                <div class="arrow-wrap pin">
+                    <input type="tel" id="pin" name="pin" maxlength="4">
+                    <img src="/creatives/AppleWatch/z-shared/dumb-img/arrows-pin-one.gif" alt="">
+                </div>
+                <input class="button" src="/creatives/AppleWatch/feature/ae/du/ar/default/img/submit-btns/submit-btn-<ejs>= buttonOrientation </ejs><ejs>= buttonWidth </ejs>-ar.gif" data-x-role="pin-entry-submit" id="submit-pin" type="image" value="Submit">
+                <ejs> if (typeof(invalidPinError) != "undefined") { </ejs>
+                        <div id="invalid-pin-error" data-x-role="invalid-pin-error" class="error">الرقم السري الذي أدخلته غير صحيح. الرجاء المحاولة مرّة أخرى</div>
+                <ejs> } </ejs>
+            </form>
+
+        <ejs> } </ejs>
+
+        <!-- MO MESSAGE -->
+        <ejs> if (state == "mo") { </ejs>
+
+            <div id="mo">
+                <div data-x-role="subscription-info-mo-sms" class="info">سوف تتم محاسبتك ب 15 درهم في الأسبوع أو 2.4 درهم في اليوم وسيتم تجديد اشتراكك تلقائيا.</div>
+                <h3 data-x-role="mo-sms">أرسل</h3>
+                <span id="keyword"><ejs>= keyword </ejs></span>
+                <h3 data-x-role="mo-to">إلى</h3>
+                <span id="short-code"><ejs>= shortCode </ejs></span>
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- CONGRATS -->
+        <ejs> if (state == "congrats") { </ejs>
+
+            <div id="congrats">
+                <h3 data-x-role="congrats">تهانينا</h3>
+                <span data-x-role="successfully-subscribed">لقد اشتركت في الخدمة</span>
+            </div>
+
+        <ejs> } </ejs>
+
+        <!-- LANGUAGE BUTTON -->
+        <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+            <a href="<ejs>= setLanguage('en') </ejs>" id="language" class="language-btn">
+                <img src="/creatives/AppleWatch/feature/ae/du/ar/default/img/en-uae.gif" alt="">
+            </a>
+
+        <ejs> } </ejs>
+
+        <!-- DISCLAIMER -->
+        <ejs> if (state != "congrats" && state != "mo" && state != "pin-entry" && state != "double-confirmation") { </ejs>
+
+            <div class="disclaimer" data-x-role="disclaimer"> 
+                لمشتركي دو: عند اشتراكك بخدمة Mobile Academy, سوف تستلم 3 رسائل كل أسبوع وسوف تتم محاسبتك ب 15 درهم في الأسبوع أو 2.4 درهم في اليوم لتتعلم العديد من المواد الممتعة مباشرة على جوّالك وسيتم تجديد اشتراكك تلقائيا. يمكنك إيقاف الخدمة بارسال UNSUB LEARN إلى 2215. من خلال اشتراكك في الخدمة فأنت موافق على كافة الشروط والأحكام للخدمة وأنك تفوّض دو لتشارك رقم جوّالك مع Mobile Academy . لاستخدام الخدمة يجب أن تكون فوق 18 سنة أو حصلت على موافقة أهلك أو الشخص المخول لدفع فاتورة جوالك. Mobile Academy تعمل وفق المعاريف الدولية لخدمات الرسائل القصيرة.حقوق الطبع محفوظة © 2015.
+                <a href="http://m.mobileacademy.com/Home/Terms?x-lang=ar" target="_blank">الشروط والأحكام</a> 
+            </div>
+
+        <ejs> } </ejs>
+
+        <ejs> if (typeof(pageReadyPixel) != "undefined") { </ejs>
+                <img data-ignore-prefixation="" src="<ejs>= pageReadyPixel </ejs>">
+        <ejs> } </ejs>
+
+    </body>
+
+</html>

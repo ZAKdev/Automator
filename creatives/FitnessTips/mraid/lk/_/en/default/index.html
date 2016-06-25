@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="stage" value="QA">
+        <meta name="suffix" value="mraid-lk-_-en-default">
+        <meta name="creative" value="FitnessTips">
+        <meta name="page-id" value="1363">
+        <meta name="service" value="Mobile Academy">
+        <meta name="platform" value="mraid">
+        <meta name="operator" value="_">
+        <meta name="one-file" value="false">
+        <meta name="language" value="en">
+        <meta name="jira-task-id" value="WAP-3546">
+        <meta name="country" value="lk">
+        <meta name="author" value="Justin">
+        <meta name="test-campaign" value="16281">
+        <meta charset="utf-8">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+        <title data-c-role="title">Mobile Academy</title>
+        <link href="/creatives/FitnessTips/mraid/lk/_/en/default/css/main.css" rel="stylesheet">
+    <meta name="postfix" value="default"></head>
+    
+    <body>
+        <div id="container" class="show-subscribe-button"> <a href="javascript:void(0)" id="mraid-close"></a>
+
+            <div class="price-info">1 Message per day, Rs 30+tax/day.</div>
+            <div class="title-holder"></div>
+            <div class="holder">
+                <!-- OPERATOR SELECTION -->
+                <div id="operator-selection" style="display:none">
+                    <div id="operators"> <span>Select your operator to subscribe</span>
+ <a data-operator-id="252" href="javascript:void(0)" class="btn-operator subscribe">
+                       <img src="/public/img/operators/dialog.png" alt="">
+                        <span>Dialog</span>
+                    </a>
+
+                        <!-- <a data-operator-id="134" href="javascript:void(0)"
+                        class="btn-operator subscribe">
+                       <img src="/public/img/operators/etisalat.png" alt="" />
+                        <span>Etisalat</span>
+                    </a>
+                    --> <a data-operator-id="147" href="javascript:void(0)" class="btn-operator subscribe">
+                        <img src="/public/img/operators/airtel.png" alt="">
+                        <span>Airtel</span>
+                    </a>
+ <a data-operator-id="198" href="javascript:void(0)" class="btn-operator subscribe">
+                        <img src="/public/img/operators/mobitel.png" alt="">
+                        <span>Mobitel</span>
+                    </a>
+
+                    </div>
+                </div>
+                <!-- SUBSCRIBE BUTTON -->
+                <div id="default-state"> <a href="javascript:void(0)" class="btn subscribe">
+                
+                    <span data-x-role="subscribe-now" class="blink">Subscribe Now!</span>
+                    
+                    <span class="aligner">
+                    
+                    <span class="pulsatingCirle">
+                    
+                    <span class="firstCirlce"></span>
+                    
+                    <span class="secondCirlce"></span>
+                    
+                    <span class="thirdCircle"></span>
+                    
+                    </span>
+              
+             </span>  
+                    
+                </a>
+
+                </div>
+                <!-- DOUBLE CONFIRMATION -->
+                <div id="double-confirmation" style="display: none">
+                
+
+                        <div id="dialog-mobitel-section-double">
+
+                            <span data-x-role="subscription-info" class="subscription-info">
+
+                                Your subscription will be renewed automatically.
+
+                            </span>
+
+
+                        </div>
+
+                        <div id="airtel-section-double">
+
+                                <span data-x-role="subscription-info" class="subscription-info">
+                                You will be charged Rs 30/= + tax per day on your Airtel mobile connection for this service.
+                                <br>
+                                <br>
+                                <span class="sinhala">මෙම සේවාව සඳහා ඔබගේ එයාටෙල් දුරකථනයට දිනකට රු 30/+ බදු අයකෙරේ</span>
+                                <br>
+                                <br>
+                              நீங்கள் ரூ அறவிடப்படும். இந்த சேவை உங்கள் ஏர்டெல் மொபைல் இணைப்பு ஒன்றுக்கு 30 / = + வரி.
+                                <br>
+                                <br>
+                    
+                                </span>
+
+                        </div>
+
+                        <a href="javascript:void(0)" id="confirm" class="btn">
+
+                        <span data-x-role="confirmation-yes" class="blink">
+                        <span id="yes_link">YES</span>
+                        <span id="subscribe_link">Subscribe</span>
+                        </span>
+
+
+                        </a>
+
+                        <span data-x-role="confirmation-no" id="double-confirmation-no">
+                        <span id="no_link">No</span>
+                        <span id="cancel_link">Cancel</span>
+                        </span>
+
+
+                </div>
+
+                <!-- SUBSCRIPTION POLLING -->
+                <div id="subscription-polling" style="display: none">
+
+                    <span data-x-role="subscription-info" class="subscription-info">
+                        Processing subscription...
+                    </span>
+
+                    <div id="loader"></div>
+
+                </div>
+
+                <!-- NUMBER ENTRY -->
+                <form id="number-entry" style="display:none">
+                    <label data-x-role="enter-number">Enter your mobile number</label>
+                    <input type="tel" id="number" maxlength="10" value="07"> <a href="javascript:void(0)" id="submit-number" class="btn">
+                
+                    <span data-x-role="number-entry-submit">Continue</span>
+                    
+                </a>
+
+                    <div id="already-subscribed-error" data-x-role="already-subscribed-error" style="display: none">You are already subscribed to this service</div>
+                    <div id="invalid-number-error" data-x-role="invalid-number-error" style="display: none">Please enter a valid number</div>
+                </form>
+                <!-- PIN ENTRY -->
+                <form id="pin-entry" style="display:none">
+                    <label data-x-role="pin-entry-help"> <strong>You will now receive an sms with pin code.</strong> 
+                        <br>To confirm your subscription
+                        <br>
+                        <br> <strong>Enter the PIN code below</strong>
+
+                    </label>
+                    <input type="tel" id="pin" maxlength="4"> <a href="javascript:void(0)" id="submit-pin" class="btn">
+            
+                <span data-x-role="pin-entry-submit">Submit</span>
+            
+            </a>
+
+                    <div id="invalid-pin-error" data-x-role="invalid-pin-error" style="display:none">You entered a wrong PIN</div>
+                </form>
+                <!-- MO MESSAGE -->
+                <div id="mo" style="display:none"> <span data-x-role="subscription-info" class="subscription-info">Your subscription will be renewed automatically.</span>
+
+                    <h3 data-x-role="mo-sms">sms</h3>
+                        <div id="keyword"></div>
+                         <h3 data-x-role="mo-to">to</h3>
+
+                        <div id="short-code"></div>
+                </div>
+                <!-- CONGRATS -->
+                <div id="congrats" style="display:none">
+                     <h3 data-x-role="congrats">Congratulations</h3>
+
+                     <h6 data-x-role="successfully-subscribed">You have been successfully subscribed <br>to the service</h6>
+
+                </div>
+            </div>
+            <div id="click-here"> <a href="javascript:void(0)" id="subscribe-link" data-c-role="click-here">Click Here</a> 
+                <span data-c-role="click-here-message">to subscribe to Mobile Academy today!</span>
+            </div>
+            <div class="disclaimer">
+                
+                <div id="dialog-section-disclaimer">
+
+                    Copyright © 2015 * Subscribers of Mobile Academy service will receive 1 message every day to learn new and amazing courses for Rs 30/day. Your subscription will be renewed automatically. You can unsubscribe from this service by sending STOP LEARN to 87799.
+
+                </div>
+
+                <div id="mobitel-section-disclaimer">
+
+                    Copyright © 2015 * Subscribers of Mobile Academy service will receive 1 message every day to learn new and amazing courses for Rs 30+tax/day. Your subscription will be renewed automatically. To stop the service, sms STOP LEARN to 31230.
+
+                </div>
+
+                <div id="airtel-section-disclaimer">
+
+                    Once subscribed you will receive a link to a page by SMS every day.
+                    <br>
+                    <br>
+                    After subscription, to unsubscribe from the service SMS STOP to 31231. 
+
+                </div>
+                
+            </div>
+            <div id="parallax"></div>
+            <script type="text/javascript" data-ignore-renderer="">
+                <ejs>- include "public/partials/mobi-one-constants.ejs" </ejs>
+            </script>
+            <script type="text/javascript" dont-minify="" src="mraid.js"></script>
+            <ejs>include "/public/partials/mobi-one-mraid-scripts.ejs"</ejs>
+            <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+        </div>
+    </body>
+
+</html>

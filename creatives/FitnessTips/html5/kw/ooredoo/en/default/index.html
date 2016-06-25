@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="stage" value="development">
+    <meta name="suffix" value="html5-kw-ooredoo-en-default">
+    <meta name="creative" value="FitnessTips">
+    <meta name="page-id" value="1733">
+    <meta name="service" value="Mobile Academy">
+    <meta name="platform" value="html5">
+    <meta name="operator" value="ooredoo">
+    <meta name="one-file" value="false">
+    <meta name="language" value="en">
+    <meta name="jira-task-id" value="WAP-5267">
+    <meta name="country" value="kw">
+    <meta name="author" value="Shane">
+
+    <meta name="test-campaign" value="14636">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <title data-c-role="title">Mobile Academy</title>
+    <!-- Global Assets -->
+    <link href="/creatives/FitnessTips/assets/css/main.css" rel="stylesheet">
+    <meta name="postfix" value="default">
+</head>
+
+<body class="en">
+    <div id="container" class="show-subscribe-button">
+        <div data-x-role="price" class="price">3KWD per Month for Postpaid<br>750 fils per week for Prepaid</div>
+        <!-- Design Content -->
+        <div id="page-content">
+            <div id="woman"></div>
+            <div id="man"></div>
+            <div id="title"></div>
+            <div id="ribbon"></div>
+            <div id="arrow"></div>
+        </div>
+        <!-- SUBSCRIBE BUTTON -->
+        <div id="default-state">
+            <a href="javascript:void(0)" id="subscribe" class="btn subscribe">
+                <span data-x-role="subscribe-now">Subscribe Now!</span>
+            </a>
+
+            <!-- div class="hotspot subscribe"></div -->
+        </div>
+        <!-- DOUBLE CONFIRMATION -->
+        <div id="double-confirmation" style="display:none"> <span data-x-role="subscription-info-double-confirmation" id="double-confirmation-message">Press "YES" to subscribe.</span>
+
+            <a href="javascript:void(0)" id="confirm" class="btn"> <span data-x-role="confirmation-yes">YES</span>
+
+            </a> <span data-x-role="confirmation-no" id="double-confirmation-no">No</span>
+
+        </div>
+        <!-- NUMBER ENTRY -->
+        <form id="number-entry" style="display:none">
+            <label data-x-role="enter-number" for="number">Enter your mobile number</label>
+            <input type="tel" id="number" maxlength="9" value="0">
+            <a href="javascript:void(0)" id="submit-number" class="btn">
+                <span data-x-role="number-entry-submit">Continue</span>
+            </a>
+
+            <div id="already-subscribed-error" data-x-role="already-subscribed-error" style="display:none">You are already subscribed to this service</div>
+            <div id="invalid-number-error" data-x-role="invalid-number-error" style="display:none">Please enter a valid number</div>
+        </form>
+        <!-- PIN ENTRY -->
+        <form id="pin-entry" style="display:none">
+            <label data-x-role="subscription-info-pin-entry" for="pin">Your subscription will be renewed automatically.</label>
+            <input type="tel" id="pin" maxlength="4">
+            <a href="javascript:void(0)" id="submit-pin" class="btn">
+                <span data-x-role="pin-entry-submit">Submit</span>
+            </a>
+
+            <div id="invalid-pin-error" data-x-role="invalid-pin-error" style="display:none">You entered a wrong PIN</div>
+        </form>
+        <!-- MO MESSAGE -->
+        <div id="mo" style="display:none"> <span data-x-role="subscription-info" id="mo-message"></span>
+
+            <h3 data-x-role="mo-sms">sms</h3>
+            <div id="keyword">{keyword}</div>
+            <h3 data-x-role="mo-to">to</h3>
+
+            <div id="short-code">{shortcode}</div>
+        </div>
+        <!-- CONGRATS -->
+        <div id="congrats" style="display:none">
+            <h3 data-x-role="congrats">Congratulations!</h3>
+
+            <h6 data-x-role="successfully-subscribed">You have been successfully subscribed<br>to the service</h6>
+
+        </div>
+        <!-- Click Here -->
+        <div id="click-here"> <a href="javascript:void(0)" class="subscribe" id="subscribe-link" data-c-role="click-here">Click Here</a>
+
+            <span data-c-role="click-here-message">to subscribe to Mobile Academy and get access to the complementary app
+                    for free download!</span>
+            <!-- img id="store" src="" -->
+            <!-- div class="hotspot subscribe"></div -->
+        </div>
+        <!-- Language -->
+        <a href="?lang=ar" id="language">
+            <img src="/public/img/language/ar-kuwait.gif" alt="Arabic">
+        </a>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer"> <span data-x-role="disclaimer">
+                Welcome to the Mobile Academy service in Kuwait. On subscribing to the service, you will receive messages to learn new and amazing courses directly from your mobile phone, for only 3 KWD per Month for Postpaid or 750 fils per week for Prepaid. Your subscription will be renewed automatically. You can unsubscribe from this service by sending STOP to 1901. To make use of this service you must be more than 18 years old or have received permission from your parents or person who is authorized to pay your bill. Mobile Academy works in accordance with the international code of conduct for SMS services. Copyright © 2016. Mobitrans FZ LLC, P.O Box 502580, Dubai, UAE.
+            </span>
+            <a href="http://m.mobileacademy.com/Home/Terms?x-lang=en" data-x-role="terms-and-conditions" target="_blank">Terms &amp; Conditions</a>
+
+        </div>
+        
+        <script type="text/javascript" data-ignore-renderer="">
+            <ejs>- include "public/partials/mobi-one-constants.ejs" </ejs>
+            </script>
+            <ejs>include "/public/partials/mobi-one-html5-scripts.ejs"</ejs>
+            <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+            
+        <ejs>include "/public/partials/image-pixel.ejs"</ejs></div>
+    </div>
+</body>
+
+</html>

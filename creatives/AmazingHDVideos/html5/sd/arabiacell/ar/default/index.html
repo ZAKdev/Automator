@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="stage" value="development">
+    <meta name="suffix" value="html5-sd-arabiacell-ar-default">
+    <meta name="creative" value="AmazingHDVideos">
+    <meta name="page-id" value="2329">
+    <meta name="service" value="Videos">
+    <meta name="platform" value="html5">
+    <meta name="operator" value="arabiacell">
+    <meta name="one-file" value="false">
+    <meta name="language" value="ar">
+    <meta name="jira-task-id" value="WAP-8680">
+    <meta name="country" value="sd">
+    <meta name="author" value="justin">
+
+    <meta name="test-campaign" value="32">
+    <meta charset="utf-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <title data-c-role="title">Mozook</title>
+    <meta name="postfix" value="default">
+
+    <!-- Global -->
+    <link href="/creatives/AmazingHDVideos/assets/css/mobiOneKit.css" rel="stylesheet">
+    <link href="/creatives/AmazingHDVideos/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="container" class="show-subscribe-button ar">
+
+        <div class="price-info"> 0.5 جنيه للرسالة، 5 رسائل فى الأسبوع.</div>
+
+        <div class="view-area">
+
+            <!-- Effects / Creative -->
+            <div id="title"></div>
+            <div id="default-background">
+                <div id="screen"></div>
+            </div>
+
+            <div class="holder">
+
+                <!-- SUBSCRIBE BUTTON -->
+                <div id="default-state">
+                    <a href="javascript:void(0)" class="btn default blink subscribe">
+                        <span data-x-role="subscribe-now">اشترك الآن!</span>
+                    </a>
+                </div>
+
+                <!-- DOUBLE CONFIRMATION -->
+                <div id="double-confirmation" style="display: none">
+                    <div id="doubleopt-background">
+                        <img src="/creatives/AmazingHDVideos/assets/img/background-doubleopt.png">
+                    </div>
+
+                    <span id="doubleopt-message">هل أنت مستعد لمشاهدة بعض الفيديوهات عالية الجودة الرائعة؟</span>
+                    <span data-x-role="subscription-info" class="subscription-info">إضغط "نعم" لتأكيد اشتراكك</span>
+                    <a href="javascript:void(0)" id="confirm" class="btn default">
+                        <span data-x-role="confirmation-yes">نعم</span>
+                    </a>
+                    <span data-x-role="confirmation-no" id="double-confirmation-no">لا</span>
+                </div>
+
+                <!-- SUBSCRIPTION POLLING -->
+                <div id="subscription-polling" style="display: none">
+                    <span data-x-role="subscription-info" class="subscription-info">جاري الإشتراك…</span>
+                    <div id="loader" class="preloader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <!-- NUMBER ENTRY -->
+                <form id="number-entry" style="display:none">
+                    <label data-x-role="enter-number">أدخل رقم جوّالك</label>
+                    <input type="tel" id="number" maxlength="10" value="09">
+                    <p>هذه الخدمة فقط لمشتركين زين السودان</p>
+
+                    <a href="javascript:void(0)" id="submit-number" class="btn default">
+                        <span data-x-role="number-entry-submit">اكمل</span>
+                    </a>
+                    <div id="already-subscribed-error" data-x-role="already-subscribed-error" style="display:none">أنت بالفعل مشترك بهذه الخدمة</div>
+                    <div id="invalid-number-error" data-x-role="invalid-number-error" style="display:none">الرجاء إدخال رقم صحيح</div>
+                </form>
+
+                <!-- PIN ENTRY -->
+                <form id="pin-entry" style="display:none">
+                    <label data-x-role="pin-entry-help">
+سوف تصلك رسالة على جوالك فيها رقم سري. لتأكيد أشتراكك أدخل الرقم السري
+                        في الأسفل
+                    </label>
+                    <input type="tel" id="pin" maxlength="4">
+                    <a href="javascript:void(0)" id="submit-pin" class="btn default">
+                        <span data-x-role="pin-entry-submit">أدخل</span>
+                    </a>
+                    <div id="invalid-pin-error" data-x-role="invalid-pin-error" style="display:none">الرقم السري الذي أدخلته غير صحيح. الرجاء المحاولة مرّة أخرى</div>
+                </form>
+
+                <!-- MO MESSAGE -->
+                <div id="mo" style="display:none">
+                    <span data-x-role="subscription-info" class="subscription-info"> وسيتم تجديد اشتراكك تلقائيا</span>
+                    <h3 data-x-role="mo-sms">أرسل</h3>
+                    <div id="keyword">KWORD</div>
+                    <h3 data-x-role="mo-to">إلى</h3>
+                    <div id="short-code">SCODE</div>
+                </div>
+
+                <!-- CONGRATS -->
+                <div id="congrats" style="display:none">
+                    <h3 data-x-role="congrats">تهانينا!</h3>
+                    <h6 data-x-role="successfully-subscribed">لقد اشتركت في الخدمة</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="click-here">
+            <a href="javascript:void(0)" id="subscribe-link" data-c-role="click-here" class="subscribe">اضغط هنا</a>
+            <span data-c-role="click-here-message">للاشتراك في الخدمة</span>
+        </div>
+
+        <div id="msg">احصل على فيديوهات عالية الجودة رائعة</div>
+
+        <div class="disclaimer">
+     
+حقوق الطبع محفوظة © 2016 * أهلاً بك في صفحة نادي موزوك الترفيهي للجوال في السودان. سيحصل المشتركون في نادي موزوك للجوال على 5 رسائل تنزيل كل أسبوع، وحدتين تنزيل/رسالة، مقابل 0.5 جنيه فقط للرسالة لتنزيل النغمات المضحكة و مقاطع الفيديو. سوف تستلم رابط صفحة التحميل الخاصة بك. اول 2 وحدة تنزيل تكون مجانية. سوف تنتهي صلاحية رصيد التنزيل بعد 21 يوم. يمكنك ايقاف الاشتراك في اي وقت عن طريق ارسال رسالة نصية بكلمة U1 الى 5085 . بعد ذلك لن يتم اي خصم على رصيدك. لاي استفسارات اخرى, الرجاء ارسل بطلب على www.mozook.com او ارسل لنا بريد الكتروني مباشرة على info@mozook.com
+            <br>
+            <br>
+            <a href="http://wap.mozook.com/downloads/TermsConditions.aspx?lang=ar" data-x-role="terms-and-conditions" target="_blank">الشروط والقوانين</a>
+        </div>
+
+        <script type="text/javascript" data-ignore-renderer="">
+            <ejs>- include "public/partials/mobi-one-constants.ejs" </ejs>
+        </script>
+        <ejs>include "/public/partials/mobi-one-html5-scripts.ejs"</ejs>
+        <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+        <ejs>include "/public/partials/image-pixel.ejs"</ejs>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+body {
+    background-color: #041535;
+}
+
+
+/* //////////// ONLY DIRECT-WAP //////////// */
+
+#double-confirmation,
+#pin-entry,
+#number-entry,
+#mo {
+    visibility: hidden;
+}
+
+
+/* ////// */
+
+#congrats,
+#subscription-polling {
+    background: #DE546B;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#container.show-congrats .holder,
+#container.show-subscription-polling .holder {
+    bottom: 10px !important;
+}
+
+#container.show-congrats .view-area,
+#container.show-subscription-polling .view-area {
+    height: 385px !important;
+}
+
+
+/*-- DU CONFIRMATION BUTTONS --*/
+
+#confirmedBtnBlock {
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 80px;
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+}
+
+.checkBtn,
+.confirmBtn {
+    color: #fff;
+    width: 240px;
+    height: 30px;
+    padding: 10px;
+    display: block;
+    /*overflow:hidden;*/
+    margin: 10px auto;
+    position: relative;
+    border-radius: 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    /*box-shadow:inset 0px 1px 1px rgba(0,0,0,0.1);*/
+    /*-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);*/
+    background: #1372b6;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #24b4d8 0%, #1372b6 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #24b4d8 0%, #1372b6 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #24b4d8 0%, #1372b6 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#24b4d8', endColorstr='#1372b6', GradientType=0);
+    /* IE6-9 */
+}
+
+
+/* extra */
+
+.confirmBtn.accept {
+    box-shadow: none !important;
+    animation: none;
+    -webkit-animation: none;
+}
+
+.confirmBtn,
+.confirmedBtn.accept {
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.confirmBtn,
+.confirmedBtn.accept {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6)
+}
+
+
+/* --0-- */
+
+.checkBtn .marker,
+.confirmBtn .marker {
+    top: 9px;
+    left: 8px;
+    width: 45px;
+    height: 34px;
+    overflow: hidden;
+    position: absolute;
+    display: inline-block;
+    background-position: 0 0;
+    background-size: 45px 68px;
+    background-repeat: no-repeat;
+    background-image: url(/creatives/TrainYourBrain/assets/img/check.png);
+}
+
+.checkBtn .markerText strong,
+.confirmBtn .markerText strong {
+    color: #061536;
+    display: block;
+    font-size: 18px;
+}
+
+.checkBtn .markerText,
+.confirmBtn .markerText {
+    top: 0;
+    right: 0px;
+    width: 150px;
+    height: 30px;
+    color: #061536;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 25px;
+    letter-spacing: 0.3px;
+    padding: 8px 25px 12px 25px;
+    /*box-shadow:0px 0px 4px rgba(0,0,0,0.5);*/
+    background: #2eb4ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #69dcff 0%, #2eb4ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#69dcff', endColorstr='#2eb4ff', GradientType=0);
+    /* IE6-9 */
+}
+
+.checkBtn.accept,
+.confirmBtn.accept {
+    opacity: 0.85;
+    /*border: 1px #85bf3d solid;*/
+    background: #031027;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #051b45 0%, #031027 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #051b45 0%, #031027 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #051b45 0%, #031027 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#051b45', endColorstr='#031027', GradientType=0);
+    /* IE6-9 */
+}
+
+.checkBtn.accept .marker,
+.confirmBtn.accept .marker {
+    background-position: 0px -34px;
+    opacity: 0.6;
+}
+
+.checkBtn.accept .markerText strong,
+.confirmBtn.accept .markerText strong {
+    color: #85bf3d;
+}
+
+.checkBtn.accept .markerText,
+.confirmBtn.accept .markerText {
+    color: #85bf3d;
+    background: #031027;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #051b45 0%, #031027 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #051b45 0%, #031027 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #051b45 0%, #031027 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#051b45', endColorstr='#031027', GradientType=0);
+    /* IE6-9 */
+}
+
+.checkBtn.switch .markerText,
+.confirmBtn.switch .markerText {
+    -webkit-animation: 0.5s switch ease-in-out;
+    animation: 0.5s switch ease-in-out;
+}
+
+@-webkit-keyframes switch {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(-60px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes switch {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.confirmedBtn {
+    color: #7d7d7d;
+    width: 240px;
+    display: block;
+    margin: 10px auto;
+    padding: 16px 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.confirmedBtn.default {
+    opacity: 0.25;
+    background: #2eb4ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #69dcff 0%, #2eb4ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#69dcff', endColorstr='#2eb4ff', GradientType=0);
+    /* IE6-9 */
+    box-shadow: none;
+    border: none;
+    text-shadow: none;
+    color: #061536;
+}
+
+.confirmedBtn.accept {
+    z-index: 999;
+    color: #061536;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background: #2eb4ff;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #69dcff 0%, #2eb4ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #69dcff 0%, #2eb4ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#69dcff', endColorstr='#2eb4ff', GradientType=0);
+    /* IE6-9 */
+}
+
+.confirmError {
+    top: 221px;
+    left: 0;
+    right: 0;
+    color: #C1ECFF;
+    z-index: 9;
+    padding: 10px;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    max-width: 290px;
+    margin: 10px auto;
+    border-radius: 15px;
+    line-height: 1.5em;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(4, 20, 52, 0.85);
+    /*text-shadow:0px 1px 1px rgba(0,0,0,0.1);
+	*/
+}
+
+.msg2 {
+    color: #fff;
+    font-size: 11px;
+    line-height: 14px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 242px;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    animation: fadein 0.7s ease-in-out 1;
+    -webkit-animation: fadein 0.7s ease-in-out 1;
+}
+
+.timer {
+    top: 275px !important;
+}
+
+.holder {
+    bottom: -18px !important;
+}
+
+.rtb .holder{
+    bottom: -6px !important;
+}
+
+.disclaimer {
+    margin-top: 30px !important;
+}
+
+.rtb .disclaimer{
+    margin-top: 10px !important;
+}
+
+#iframe-state{
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#iframe-state iframe{
+    height:240px;
+    border:none;
+}
+
+.states{
+    z-index: 10;
+    position: relative;
+}
+
+
+/*------------ GOOGLE RTB ANIMATION STOP --------------*/
+
+body.stop-animations *,
+body.stop-animations *:before,
+body.stop-animations *:after {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+body.stop-animations .student-girl.playAnimBack {
+    -webkit-transform: translateX(700px) !important;
+    transform: translateX(700px) !important;
+}
+
+body.stop-animations .student-boy.playAnimBack {
+    -webkit-transform: translateX(-700px) !important;
+    transform: translateX(-700px) !important;
+}
+

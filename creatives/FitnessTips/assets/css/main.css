@@ -1,0 +1,674 @@
+/* Global Variables */
+/* Page Styles */
+#page-content {
+  width: 100%;
+  height: 230px;
+  background: -webkit-linear-gradient(top, #333 0%, #111 100%);
+  background: -moz-linear-gradient(top, #333 0%, #111 100%);
+  background: -o-linear-gradient(top, #333 0%, #111 100%);
+  background: -ms-linear-gradient(top, #333 0%, #111 100%);
+  background: linear-gradient(to bottom, #333 0%, #111 100%);
+  background-image: url("/creative/FitnessTips/assets/img/background.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: 50% 0;
+  -webkit-box-shadow: inset 0 1px rgba(255,255,255,0.11);
+  box-shadow: inset 0 1px rgba(255,255,255,0.11);
+}
+#page-content::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 50px;
+  background: -webkit-linear-gradient(top, rgba(17,17,17,0) 0%, #111 100%);
+  background: -moz-linear-gradient(top, rgba(17,17,17,0) 0%, #111 100%);
+  background: -o-linear-gradient(top, rgba(17,17,17,0) 0%, #111 100%);
+  background: -ms-linear-gradient(top, rgba(17,17,17,0) 0%, #111 100%);
+  background: linear-gradient(to bottom, rgba(17,17,17,0) 0%, #111 100%);
+}
+#page-content #woman {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 105px;
+  height: 173px;
+  background: transparent;
+  background-image: url("/creative/FitnessTips/assets/img/img-woman.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 105px 173px;
+  -moz-background-size: 105px 173px;
+  background-size: 105px 173px;
+  background-position: 50% 50%;
+}
+#page-content #man {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 145px;
+  height: 190px;
+  background: transparent;
+  background-image: url("/creative/FitnessTips/assets/img/img-man.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 145px 190px;
+  -moz-background-size: 145px 190px;
+  background-size: 145px 190px;
+  background-position: 50% 50%;
+}
+#page-content #title {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 320px;
+  height: 88px;
+  background: transparent;
+  background-image: url("/creative/FitnessTips/assets/img/title-en.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 320px 88px;
+  -moz-background-size: 320px 88px;
+  background-size: 320px 88px;
+  background-position: 50% 50%;
+}
+body.ar #page-content #title {
+  background-image: url("/creative/FitnessTips/assets/img/title-ar.png");
+}
+#page-content #ribbon {
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 70px;
+  height: 110px;
+  background: transparent;
+  background-image: url("/creative/FitnessTips/assets/img/ribbon-en.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 70px 110px;
+  -moz-background-size: 70px 110px;
+  background-size: 70px 110px;
+  background-position: 50% 50%;
+}
+body.ar #page-content #ribbon {
+  background-image: url("/creative/FitnessTips/assets/img/ribbon-ar.png");
+}
+#page-content #arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  background-image: url("/creative/FitnessTips/assets/img/arrow.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 25px 25px;
+  -moz-background-size: 25px 25px;
+  background-size: 25px 25px;
+  background-position: 50% 50%;
+  z-index: 10;
+  -webkit-animation: upDown 1s ease-in-out infinite;
+  -moz-animation: upDown 1s ease-in-out infinite;
+  -o-animation: upDown 1s ease-in-out infinite;
+  -ms-animation: upDown 1s ease-in-out infinite;
+  animation: upDown 1s ease-in-out infinite;
+}
+/* Global */
+html,
+body {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  background-position: 50% 0%;
+  -webkit-background-size: auto 430px;
+  -moz-background-size: auto 430px;
+  background-size: auto 430px;
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+body div,
+body span {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+body.ar {
+  direction: rtl;
+}
+body .hotspot {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,0,0,0);
+}
+body a,
+body a img {
+  border: none;
+  outline: none;
+}
+#click-here {
+  display: none;
+  margin: 5px 10px 0;
+  font-size: 0.625em;
+  text-align: center;
+}
+body.ar #click-here {
+  font-size: 0.688em;
+}
+#click-here span {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#click-here a,
+#click-here a:visited {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: #f70;
+}
+#click-here a:hover {
+  color: #ff9940;
+}
+#click-here img {
+  display: block;
+  margin: 5px auto 0;
+  width: 100px;
+  height: auto;
+}
+#language {
+  display: none;
+  margin: 10px auto 0;
+  padding: 0;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+#language img {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+}
+#container.show-subscribe-button #click-here,
+#container.show-default-state #click-here,
+#container.show-subscribe-button #language,
+#container.show-default-state #language,
+#container.show-number-entry #language {
+  display: block;
+}
+#container {
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+}
+.price {
+  margin: 0;
+  padding: 5px 0;
+  width: auto;
+  height: auto;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.25);
+  font-size: 0.625em;
+  line-height: normal;
+  text-align: center;
+}
+body.ar .price {
+  font-size: 0.688em;
+}
+.disclaimer {
+  padding: 10px;
+  width: auto;
+  height: auto;
+  font-size: 0.625em;
+  line-height: normal;
+  text-align: center;
+}
+body.ar .disclaimer {
+  font-size: 0.688em;
+}
+.disclaimer span {
+  display: inline;
+}
+.disclaimer a,
+.disclaimer a:visited {
+  display: block;
+  margin: 10px auto;
+  color: #777;
+}
+.disclaimer a:hover {
+  color: #999;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.75em 0;
+  width: 225px;
+  height: auto;
+  background: -webkit-linear-gradient(top, #50c539 0%, #3c942b 100%);
+  background: -moz-linear-gradient(top, #50c539 0%, #3c942b 100%);
+  background: -o-linear-gradient(top, #50c539 0%, #3c942b 100%);
+  background: -ms-linear-gradient(top, #50c539 0%, #3c942b 100%);
+  background: linear-gradient(to bottom, #50c539 0%, #3c942b 100%);
+  border: 1px solid #2d6e20;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
+  color: #fff !important;
+  font-size: 1em;
+  font-weight: bold;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+}
+body.ar .btn {
+  font-size: 1.125em;
+}
+.btn > span {
+  top: -1px;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+  -moz-animation: blink 1s steps(5, start) infinite;
+  -o-animation: blink 1s steps(5, start) infinite;
+  -ms-animation: blink 1s steps(5, start) infinite;
+  animation: blink 1s steps(5, start) infinite;
+}
+#operator-selection,
+#default-state,
+#double-confirmation,
+#number-entry,
+#pin-entry,
+#mo,
+#congrats {
+  position: relative;
+  display: block;
+  margin: 0 10px;
+  padding: 10px 10px 0;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+#operator-selection label,
+#default-state label,
+#double-confirmation label,
+#number-entry label,
+#pin-entry label,
+#mo label,
+#congrats label,
+#operator-selection input,
+#default-state input,
+#double-confirmation input,
+#number-entry input,
+#pin-entry input,
+#mo input,
+#congrats input {
+  position: relative;
+  display: block;
+}
+#operator-selection label,
+#default-state label,
+#double-confirmation label,
+#number-entry label,
+#pin-entry label,
+#mo label,
+#congrats label {
+  font-size: 1em;
+  text-align: center;
+}
+#operator-selection input,
+#default-state input,
+#double-confirmation input,
+#number-entry input,
+#pin-entry input,
+#mo input,
+#congrats input {
+  margin: 0.5em auto;
+  padding: 0.5em;
+  border: 1px solid #000;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #111;
+  direction: ltr;
+  font-size: 1.125em;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-align: left;
+  outline: none;
+}
+#operator-selection #invalid-number-error,
+#default-state #invalid-number-error,
+#double-confirmation #invalid-number-error,
+#number-entry #invalid-number-error,
+#pin-entry #invalid-number-error,
+#mo #invalid-number-error,
+#congrats #invalid-number-error,
+#operator-selection #already-subscribed-error,
+#default-state #already-subscribed-error,
+#double-confirmation #already-subscribed-error,
+#number-entry #already-subscribed-error,
+#pin-entry #already-subscribed-error,
+#mo #already-subscribed-error,
+#congrats #already-subscribed-error,
+#operator-selection #invalid-pin-error,
+#default-state #invalid-pin-error,
+#double-confirmation #invalid-pin-error,
+#number-entry #invalid-pin-error,
+#pin-entry #invalid-pin-error,
+#mo #invalid-pin-error,
+#congrats #invalid-pin-error {
+  margin: 5px 0;
+  padding: 0;
+  color: #f60;
+  font-size: 0.75em;
+  text-align: center;
+}
+#operator-selection #operators {
+  text-align: center;
+}
+#operator-selection #operators > span {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.75), 0 2px 3px rgba(0,0,0,0.75);
+}
+body.ar #operator-selection #operators > span {
+  font-size: 0.813em;
+}
+#operator-selection #operators a.btn-operator {
+  display: inline-block;
+  margin: 0 3px;
+  width: 60px;
+  height: 70px;
+}
+#operator-selection #operators a.btn-operator img {
+  width: 60px !important;
+  height: 60px !important;
+}
+#operator-selection #operators a.btn-operator > span {
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: 60px;
+  height: auto;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.75), 0 2px 3px rgba(0,0,0,0.75);
+}
+body.ar #operator-selection #operators a.btn-operator > span {
+  font-size: 0.813em;
+}
+#operator-selection #operators a.btn-operator:link,
+#operator-selection #operators a.btn-operator:hover,
+#operator-selection #operators a.btn-operator:active,
+#operator-selection #operators a.btn-operator:visited {
+  text-decoration: none;
+}
+#default-state {
+  padding: 10px 0;
+}
+#default-state a.btn span:before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  top: 1px;
+  margin: 0 5px;
+  padding: 0;
+  width: 20px;
+  height: 15px;
+  background: transparent url("/creative/WhatsApp/assets/img/icon-download.png") no-repeat;
+  background-position: 0% 0%;
+  -webkit-background-size: 20px 15px;
+  -moz-background-size: 20px 15px;
+  background-size: 20px 15px;
+}
+#double-confirmation span {
+  text-align: center;
+}
+#double-confirmation span#double-confirmation-message {
+  font-size: 0.75em;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+#double-confirmation span#double-confirmation-no {
+  font-size: 0.75em;
+  margin-top: 5px;
+  padding-top: 5px;
+  text-decoration: underline;
+}
+#number-entry {
+  text-align: center;
+}
+#number-entry input {
+  display: block;
+  padding: 0.625em 0.5em;
+  width: 130px;
+  direction: ltr;
+}
+#pin-entry {
+  text-align: center;
+}
+#pin-entry label {
+  font-size: 0.75em;
+}
+body.ar #pin-entry label {
+  font-size: 0.875em;
+}
+#pin-entry h3 {
+  margin: 0.5em 0 0;
+  font-size: 1em;
+  text-align: center;
+}
+#pin-entry input {
+  display: block;
+  padding: 0.625em 0.5em;
+  width: 50px;
+  direction: ltr;
+  text-align: center;
+}
+#mo,
+#congrats {
+  text-align: center;
+}
+#mo h3,
+#congrats h3,
+#mo h6,
+#congrats h6 {
+  margin: 5px 0;
+  padding: 0;
+  font-weight: normal;
+}
+#mo h3,
+#congrats h3 {
+  font-size: 1em;
+}
+#mo h6,
+#congrats h6 {
+  font-size: 0.75em;
+}
+#mo span,
+#congrats span {
+  font-size: 0.75em;
+}
+#keyword,
+#short-code {
+  margin: 5px 0px;
+  color: #f60;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* 320x480 */
+@media only screen and (max-height: 372px) {
+  #girl {
+    width: 118px;
+    height: 200px;
+    -webkit-background-size: 118px 200px;
+    -moz-background-size: 118px 200px;
+    background-size: 118px 200px;
+  }
+  #container {
+    height: 356px;
+  }
+}
+/* mraid */
+#mraid-close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  width: 25px;
+  height: 25px;
+  background-image: url("/public/mraid-landing-pages/img/close.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 100;
+}
+@-moz-keyframes upDown {
+  0% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    -moz-transform: translate3d(0, -5px, 0);
+    -o-transform: translate3d(0, -5px, 0);
+    -ms-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@-webkit-keyframes upDown {
+  0% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    -moz-transform: translate3d(0, -5px, 0);
+    -o-transform: translate3d(0, -5px, 0);
+    -ms-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@-o-keyframes upDown {
+  0% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    -moz-transform: translate3d(0, -5px, 0);
+    -o-transform: translate3d(0, -5px, 0);
+    -ms-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@keyframes upDown {
+  0% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    -moz-transform: translate3d(0, -5px, 0);
+    -o-transform: translate3d(0, -5px, 0);
+    -ms-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    -moz-transform: translate3d(0, 5px, 0);
+    -o-transform: translate3d(0, 5px, 0);
+    -ms-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+}
+@-moz-keyframes blink {
+  0%, 50% {
+    visibility: visible;
+  }
+  51%, 100% {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  0%, 50% {
+    visibility: visible;
+  }
+  51%, 100% {
+    visibility: hidden;
+  }
+}
+@-o-keyframes blink {
+  0%, 50% {
+    visibility: visible;
+  }
+  51%, 100% {
+    visibility: hidden;
+  }
+}
+@keyframes blink {
+  0%, 50% {
+    visibility: visible;
+  }
+  51%, 100% {
+    visibility: hidden;
+  }
+}

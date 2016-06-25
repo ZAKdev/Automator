@@ -1,0 +1,514 @@
+/* Hint popup */
+
+#wrongspot {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 9px;
+    width: 290px;
+    height: 50px;
+    padding: 0;
+    z-index: 999 !important;
+}
+
+#warning {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -55px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    color: #ccc;
+    font-size: 11px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 290px;
+}
+
+@-webkit-keyframes dupulse {
+    0% {
+        -webkit-transform: scale(0.98);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0.98);
+    }
+}
+
+@-moz-keyframes dupulse {
+    0% {
+        -moz-transform: scale(0.98);
+    }
+    50% {
+        -moz-transform: scale(1);
+    }
+    100% {
+        -moz-transform: scale(0.98);
+    }
+}
+
+@-ms-keyframes dupulse {
+    0% {
+        -ms-transform: scale(0.98);
+    }
+    50% {
+        -ms-transform: scale(1);
+    }
+    100% {
+        -ms-transform: scale(0.98);
+    }
+}
+
+@keyframes dupulse {
+    0% {
+        transform: scale(0.98);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.98);
+    }
+}
+
+
+/* Arrow */
+
+#container.show-default-state #arrow {
+    display: none;
+}
+
+
+/* Creative Shane */
+
+#page-content #title {
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 175px;
+    height: 80px;
+    background: transparent;
+    background-repeat: no-repeat;
+    -webkit-background-size: 175px 80px;
+    -moz-background-size: 175px 80px;
+    background-size: 175px 80px;
+    background-position: 50% 50%;
+    background-image: url("/creatives/FitnessTips/assets/img/title-en-du.png");
+}
+
+#page-content #ribbon {
+    position: absolute;
+    display: block;
+    top: 108px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 120px;
+    height: 106px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/ribbon-du.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 120px 106px;
+    -moz-background-size: 120px 106px;
+    background-size: 120px 106px;
+    background-position: 50% 50%;
+}
+
+
+/* Subscription Polling */
+
+#subscription-polling .subscription-info {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#subscription-polling #loader {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background: transparent url("/creatives/FitnessTips/assets/img/preloader.gif") no-repeat;
+    background-position: 50% 50%;
+    background-size: 32px 32px;
+}
+
+
+/*-- DU CONFIRMATION BUTTONS --*/
+
+#confirmedBtnBlock {
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 80px;
+    width: 260px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+}
+
+.checkBtn,
+.confirmBtn {
+    color: #fff;
+    width: 240px;
+    height: 30px;
+    padding: 10px;
+    display: block;
+    overflow: hidden;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    background: #34ce12;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#34ce12', endColorstr='#158400', GradientType=0);
+    /* IE6-9 */
+}
+
+.checkBtn .marker,
+.confirmBtn .marker {
+    top: 9px;
+    left: 10px;
+    width: 45px;
+    height: 34px;
+    overflow: hidden;
+    position: absolute;
+    display: inline-block;
+    background-position: 0 0;
+    background-size: 45px 68px;
+    background-repeat: no-repeat;
+    background-image: url("/creatives/FitnessTips/assets/img/check.png");
+}
+
+.checkBtn .markerText strong,
+.confirmBtn .markerText strong {
+    color: #fff;
+    display: block;
+    font-size: 21px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    margin-top: -1px;
+}
+
+.checkBtn .markerText,
+.confirmBtn .markerText {
+    top: 0;
+    right: 0px;
+    width: 150px;
+    height: 30px;
+    color: #9FFF7E;
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    border-radius: 25px;
+    letter-spacing: -0.1px;
+    padding: 8px 25px 12px 25px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+    background: #53d029;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #53d029 0%, #248b00 50%, #31a400 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #53d029 0%, #248b00 50%, #31a400 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #53d029 0%, #248b00 50%, #31a400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#53d029', endColorstr='#31a400', GradientType=0);
+    /* IE6-9 */
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.checkBtn.accept,
+.confirmBtn.accept {
+    background: #000;
+    border: 1px solid #20B700;
+    box-shadow: none;
+    padding: 9px 10px;
+    color: #20B700;
+}
+
+.checkBtn.accept .marker,
+.confirmBtn.accept .marker {
+    background-position: 0px -34px;
+    top: 7px;
+}
+
+.checkBtn.accept .markerText strong,
+.confirmBtn.accept .markerText strong {
+    color: #20B700;
+    margin-top: -2px;
+}
+
+.checkBtn.accept .markerText,
+.confirmBtn.accept .markerText {
+    color: #20B700;
+    background: none;
+}
+
+.checkBtn.switch .markerText,
+.confirmBtn.switch .markerText {
+    -webkit-animation: 0.5s switch ease-in-out;
+    animation: 0.5s switch ease-in-out;
+}
+
+@-webkit-keyframes switch {
+    0% {
+        -webkit-transform: translateX(0);
+    }
+    50% {
+        -webkit-transform: translateX(-60px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes switch {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.confirmedBtn {
+    color: #fff;
+    width: 240px;
+    display: block;
+    margin: 10px auto;
+    padding: 14px 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 22px;
+}
+
+.confirmedBtn.default {
+    opacity: 0.5;
+    background: #34ce12;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#34ce12', endColorstr='#158400', GradientType=0);
+    /* IE6-9 */
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.confirmedBtn.accept {
+    color: #fff;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background: #34ce12;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#34ce12', endColorstr='#158400', GradientType=0);
+    /* IE6-9 */
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.confirmError {
+    top: 130px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index: 9;
+    padding: 10px;
+    display: none;
+    font-size: 11px;
+    max-width: 280px;
+    margin: 10px auto;
+    border-radius: 8px;
+    line-height: 1.5em;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.88);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#pin-notification {
+    left: 0;
+    right: 0;
+    z-index: 10;
+    top: -85px;
+    color: #fff;
+    width: auto;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    position: absolute;
+    /*box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);*/
+    background-color: rgba(0, 0, 0, 0.9);
+    line-height: 14px;
+}
+
+#pin-notification img {
+    float: left;
+}
+
+#container.show-pin-entry #pin-notification.show {
+    display: block !important;
+}
+
+.fadeInUp {
+    -webkit-animation: 0.5s fadeInUp ease-in-out;
+    animation: 0.5s fadeInUp ease-in-out;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        -webkit-transform: translateY(200%);
+        -webkit-opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(-10px);
+    }
+    75% {
+        -webkit-transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#number-entry,
+#pin-entry,
+#double-confirmation,
+#mo,
+#congrats,
+#subscription-polling,
+#operator-selection {
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    background-color: rgba(81, 82, 77, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+#subscription-polling {
+    text-align: center;
+}
+
+#pin-entry input {
+    width: 70px;
+}
+
+#default-state {
+    padding: 0;
+}
+
+#operator-selection label,
+#default-state label,
+#double-confirmation label,
+#number-entry label,
+#pin-entry label,
+#mo label,
+#congrats label {
+    font-size: 13px;
+}
+
+#number-entry .btn,
+#pin-entry .btn {
+    color: #fff;
+    width: 230px;
+    display: block;
+    margin: auto;
+    padding: 12px 10px;
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 22px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    background: #34ce12;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #34ce12 0%, #0b6400 50%, #158400 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#34ce12', endColorstr='#158400', GradientType=0);
+    /* IE6-9 */
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+#congrats h3 {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#congrats h6 {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+
+#iframe-state {
+    width: 320px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+}
+
+#iframe-state iframe {
+    width: 300px;
+    height: 160px;
+    border: none;
+}

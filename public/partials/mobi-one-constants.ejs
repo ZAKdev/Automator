@@ -1,0 +1,31 @@
+window.mobiOneConstants = {
+    campaignId: <ejs>= campaignId </ejs>,
+    userId: <ejs>= userId </ejs>,
+    sessionId: <ejs>= sessionId </ejs>,
+    clientSessionId: <ejs>= clientSessionId </ejs>,
+    impressions: <ejs>= impressions </ejs>,
+    spyServer: "<ejs>= spyServer </ejs>",
+    domain: "<ejs>= domain </ejs>",
+    q42: "<ejs>= q42 </ejs>",
+    queryTokens: "<ejs>= queryTokens </ejs>",  
+    ip: "<ejs>= ip </ejs>"  
+};
+
+<ejs> if (typeof(queryParams) != "undefined") { </ejs>
+    window.mobiOneConstants.queryParams = <ejs>- JSON.stringify(queryParams, null, 4) </ejs>
+<ejs> } </ejs>
+
+<ejs> if (typeof(ab) != "undefined") { </ejs> 
+    window.mobiOneConstants.ab = <ejs>- JSON.stringify(ab, null, 4) </ejs>
+<ejs> } </ejs>
+
+<ejs> if (typeof(countryFromIp) != "undefined") { </ejs> 
+    window.mobiOneConstants.countryFromIp = "<ejs>- countryFromIp </ejs>"
+<ejs> } </ejs>
+
+function showStats(){
+    cid = document.getElementsByName("test-campaign")[0].getAttribute("value")
+    pid = document.getElementsByName("page-id")[0].getAttribute("value")
+    url = "http://192.168.1.42:4081/apis/branches/ptwb87c/execute/false/presentation"
+    window.open(url + "?pageId=" + pid + "&campaignId=" + cid, "_blank")
+}

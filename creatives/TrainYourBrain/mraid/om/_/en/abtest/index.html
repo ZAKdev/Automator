@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="stage" value="qa">
+    <meta name="suffix" value="mraid-om-_-en-abtest">
+    <meta name="creative" value="TrainYourBrain">
+    <meta name="page-id" value="2393">
+    <meta name="service" value="Mobile Academy">
+    <meta name="platform" value="mraid">
+    <meta name="operator" value="_">
+    <meta name="one-file" value="false">
+    <meta name="language" value="en">
+    <meta name="jira-task-id" value="WAP-8963">
+    <meta name="country" value="om">
+    <meta name="author" value="Genesis">
+    <meta name="test-campaign" value="14347">
+    <meta charset="utf-8">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1, minimal-ui">
+    <title data-c-role="title">Mobile Academy</title>
+    <meta name="postfix" value="default">
+
+    <link href="/creatives/TrainYourBrain/assets/css/mobiOneKit.css" rel="stylesheet">
+    <link href="/creatives/TrainYourBrain/assets/css/main-updated.css" rel="stylesheet">
+    <link href="/creatives/TrainYourBrain/assets/css/custom-om.css" rel="stylesheet">
+    
+</head>
+<body class="en">
+
+    <div id="container" class="show-subscribe-button opt-om">
+
+        <div id="preloader"></div>
+
+        <a href="javascript:void(0)" id="mraid-close"></a>
+
+        <div class="price-info">3 Messages per week, 400 Bz per message.</div>
+
+        <div id="view-area" class="view-area" style="visibility:hidden">
+
+            <!-- 1st stage -->
+            <div class="malogo"></div>
+            <div class="label"></div>
+            <div class="catdog"></div>
+            <div class="answer" id="dog"></div>
+            <div class="answer" id="cats"></div>
+            <div id="or">OR</div>
+
+            <!-- Creative Starts -->
+            <div id="scratch-container">
+                <canvas id="scratch-canvas" width="320" height="400"></canvas>
+            </div>
+            <!-- Creative Ends -->
+
+            <div class="holder">
+
+                <!-- OPERATOR SELECTION -->
+                <div id="operator-selection" style="display:none">
+                    <div id="operators">
+                        <span>Select your operator to subscribe</span>
+                        <a data-operator-id="2" href="javascript:void(0)" class="btn-operator subscribe">
+                            <img src="/public/img/operators/omantel.png" alt="">
+                            <span>OmanTel</span>
+                        </a>
+                        <a data-operator-id="108" href="javascript:void(0)" class="btn-operator subscribe">
+                            <img src="/public/img/operators/ooredoo.png" alt="">
+                            <span>Ooredoo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SUBSCRIBE BUTTON -->
+                <div id="default-state">
+                    <a href="javascript:void(0)" id="subscribe" class="confirmedBtn subscribe accept">
+                        <strong>Subscribe Now!</strong>
+                    </a>
+                    <div id="msg">
+                        <a href="javascript:void(0)" id="subscribe-link" data-c-role="click-here" class="subscribe">Click Here</a>
+                        <span data-c-role="click-here-message">to subscribe to Mobile Academy<br>and get <b>unlimited</b> access to more than<br><b>100</b> premium courses.</span>
+                    </div>
+                </div>
+
+                <!-- DOUBLE CONFIRMATION -->
+                <div id="double-confirmation" style="display:none">
+                    <span data-x-role="subscription-info" class="subscription-info">You will be charged 1200 Bz per week and your subscription will be renewed automatically.</span>
+                    <div class="timer counter">
+                        <u id="count">01:00</u> left to CONFIRM
+                    </div>
+                    <a href="javascript:void(0)" id="confirm" class="btn">
+                        <span data-x-role="confirmation-yes">Yes! Start Learning</span>
+                    </a>
+                    <span data-x-role="confirmation-no" id="double-confirmation-no">No</span>
+                </div>
+
+                <!-- SUBSCRIPTION POLLING -->
+                <div id="subscription-polling" style="display: none">
+                    <span data-x-role="subscription-info" class="subscription-info">Processing subscription...</span>
+                    <div id="loader" class="preloader1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <!-- NUMBER ENTRY -->
+                <form id="number-entry" style="display:none">
+                    <label data-x-role="enter-number">Enter your mobile number</label>
+                    <input type="tel" id="number" maxlength="8" value="9">
+                    <a href="javascript:void(0)" id="submit-number" class="btn">
+                        <span data-x-role="number-entry-submit">Continue</span>
+                    </a>
+                    <div id="already-subscribed-error" data-x-role="already-subscribed-error" style="display: none">You are already subscribed to this service</div>
+                    <div id="invalid-number-error" data-x-role="invalid-number-error" style="display: none">Please enter a valid number</div>
+                </form>
+
+                <!-- PIN ENTRY -->
+                <form id="pin-entry" style="display:none">
+                    <label data-x-role="pin-entry-help">
+                        <strong>You will now receive an sms with pin code.</strong>
+                        <span>To confirm your subscription enter the PIN code below</span>
+                    </label>
+                    <input type="tel" id="pin" maxlength="4">
+                    <a href="javascript:void(0)" id="submit-pin" class="btn">
+                        <span data-x-role="pin-entry-submit">Submit</span>
+                    </a>
+                    <div id="invalid-pin-error" data-x-role="invalid-pin-error" style="display:none">You entered a wrong PIN</div>
+                </form>
+
+                <!-- MO MESSAGE -->
+                <div id="mo" style="display:none">
+                    <span data-x-role="subscription-info" class="subscription-info"></span>
+                    <h3 data-x-role="mo-sms">sms</h3>
+                    <div id="keyword">KWORD</div>
+                    <h3 data-x-role="mo-to">to</h3>
+                    <div id="short-code">SCODE</div>
+                </div>
+
+                <!-- CONGRATS -->
+                <div id="congrats" style="display:none">
+                    <h3 data-x-role="congrats">Congratulations</h3>
+                    <h6 data-x-role="successfully-subscribed">You have been successfully subscribed<br>to the service</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="disclaimer">
+            <span>
+                Copyright © 2016 * Subscribers of Mobile Academy service will receive 3 messages every week to learn new and amazing courses, each message will cost 400 Bz. Your subscription will be renewed automatically. You can unsubscribe by sending, for Ooredoo: sms STOP to 90960, for Omantel: sms STOP to 91197.
+            </span>
+        </div>
+
+        <script type="text/javascript" data-ignore-renderer=""><ejs>- include "public/partials/mobi-one-constants.ejs"</ejs></script>
+        <script type="text/javascript" dont-minify="" src="mraid.js"></script>
+        <ejs>include "/public/partials/mraid-scripts.ejs"</ejs>
+        <script type="text/javascript" src="<ejs>=suffixDir</ejs>/js/main.js"></script>
+
+    </div>
+
+</body>
+</html>

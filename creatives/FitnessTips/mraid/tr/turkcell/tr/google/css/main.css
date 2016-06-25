@@ -1,0 +1,755 @@
+/* design */
+
+#page-content {
+    width: 100%;
+    height: 175px;
+    background: -webkit-linear-gradient(top, #333 0%, #111 100%);
+    background: -moz-linear-gradient(top, #333 0%, #111 100%);
+    background: -o-linear-gradient(top, #333 0%, #111 100%);
+    background: -ms-linear-gradient(top, #333 0%, #111 100%);
+    background: linear-gradient(to bottom, #333 0%, #111 100%);
+    background-image: url("/creatives/FitnessTips/assets/img/background.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: 50% 0;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.11);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.11);
+    position: relative;
+    overflow: hidden;
+}
+
+#page-content::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 50px;
+    background: -webkit-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111 100%);
+    background: -moz-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111 100%);
+    background: -o-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111 100%);
+    background: -ms-linear-gradient(top, rgba(17, 17, 17, 0) 0%, #111 100%);
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 0%, #111 100%);
+}
+
+#page-content #woman {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 105px;
+    height: 173px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/img-woman.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 105px 173px;
+    -moz-background-size: 105px 173px;
+    background-size: 105px 173px;
+    background-position: 50% 50%;
+}
+
+#page-content #man {
+    position: absolute;
+    right: -20px;
+    bottom: -10px;
+    width: 145px;
+    height: 190px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/img-man.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 145px 190px;
+    -moz-background-size: 145px 190px;
+    background-size: 145px 190px;
+    background-position: 50% 50%;
+}
+
+#page-content #title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 320px;
+    height: 88px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/title-en.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 320px 88px;
+    -moz-background-size: 320px 88px;
+    background-size: 320px 88px;
+    background-position: 50% 50%;
+}
+
+#page-content #title.am {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 320px;
+    height: 88px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/title-tr.png");
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+    background-position: 50% 50%;
+}
+
+body.ar #page-content #title {
+    background-image: url("/creatives/FitnessTips/assets/img/title-ar.png");
+}
+
+#ribbon {
+    position: absolute;
+    display: block;
+    top: 58px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/badge-tr.png");
+    background-repeat: no-repeat;
+    background-size: 130px auto;
+    background-position: 50% 50%;
+    z-index: 9;
+}
+
+#page-content #arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    background-image: url("/creatives/FitnessTips/assets/img/arrow.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 25px 25px;
+    -moz-background-size: 25px 25px;
+    background-size: 25px 25px;
+    background-position: 50% 50%;
+    z-index: 10;
+    -webkit-animation: upDown 1s ease-in-out infinite;
+    -moz-animation: upDown 1s ease-in-out infinite;
+    -o-animation: upDown 1s ease-in-out infinite;
+    -ms-animation: upDown 1s ease-in-out infinite;
+    animation: upDown 1s ease-in-out infinite;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 320px;
+    height: 175px;
+}
+
+.keeper {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 90px;
+    bottom: 20px;
+    margin: 0 auto;
+    padding: 0;
+    width: 42px;
+    height: 78px;
+    background-image: url("/creatives/Football/assets/img/keeper.png");
+    -webkit-background-size: 42px 78px;
+    -moz-background-size: 42px 78px;
+    background-size: 42px 78px;
+    -webkit-animation: defend 6s ease-in-out infinite;
+    -moz-animation: defend 6s ease-in-out infinite;
+    -ms-animation: defend 6s ease-in-out infinite;
+    -o-animation: defend 6s ease-in-out infinite;
+    animation: defend 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes defend {
+    0% {
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    50% {
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    100% {
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+.ball {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    background: url(/creatives/Football/assets/img/background_ball.png) no-repeat;
+    -webkit-background-size: 15px 15px;
+    -moz-background-size: 15px 15px;
+    background-size: 15px 15px;
+}
+
+.title-wrap {
+    position: relative;
+    top: 5px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 320px;
+    height: 75px;
+    background: url('/creatives/Football/assets/img/title-tr@2x.png') no-repeat;
+    -webkit-background-size: 320px 75px;
+    -moz-background-size: 320px 75px;
+    background-size: 320px 75px;
+}
+
+
+/* global */
+
+* {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    /* #486922; */
+    text-align: center;
+}
+
+body.stop-animations *,
+body.stop-animations *:before,
+body.stop-animations *:after {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+#mraid-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+    color: white;
+    background-image: url('/public/mraid-landing-pages/img/close.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    /*background: url('/creatives/Football/assets/img/background@2x.jpg') center -50px no-repeat;
+    background-size: 100% 425px;*/
+}
+
+.price {
+    position: relative;
+    padding: 5px 10px;
+    font-size: 0.625em;
+    color: #fff;
+    text-align: center;
+    -webkit-text-shadow: 0 1px 2px black;
+    -moz-text-shadow: 0 1px 2px black;
+    -ms-text-shadow: 0 1px 2px black;
+    -o-text-shadow: 0 1px 2px black;
+    text-shadow: 0 1px 2px black;
+    z-index: 5;
+}
+
+.disclaimer {
+    position: relative;
+    margin: 0 0 10px;
+    padding: 10px;
+    background-color: rgba(80, 80, 80, 0.5);
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #313131;
+    z-index: 5;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.4);
+}
+
+.disclaimer b {
+    display: block;
+    margin: 0 auto 3px;
+}
+
+.customer-support {
+    text-align: center;
+    margin: 15px 0 5px;
+    padding: 0;
+}
+
+.customer-support a {
+    color: #6D1F1D;
+}
+
+#subscriptions {
+    position: relative;
+    padding: 10px;
+    /*background-color: rgba(30, 30, 30, 0.75);*/
+    /*-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);*/
+    z-index: 5;
+    color: #CACACA;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0.750em 10px;
+    width: 65%;
+    -webkit-animation: beat 1s infinite ease-in-out;
+    -moz-animation: beat 1s infinite ease-in-out;
+    -ms-animation: beat 1s infinite ease-in-out;
+    -o-animation: beat 1s infinite ease-in-out;
+    animation: beat 1s infinite ease-in-out;
+    background: #43b9dd;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #43b9dd 0%, #277fc2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #43b9dd 0%, #277fc2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #43b9dd 0%, #277fc2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#43b9dd', endColorstr='#277fc2', GradientType=0);
+    /* IE6-9 */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.error {
+    margin: 10px auto 0;
+    color: #f00;
+    font-size: 16px;
+}
+
+
+/* Subscription Methods */
+
+#default-state,
+#double-confirmation,
+#subscription-polling,
+#number-entry,
+#pin-entry,
+#mo,
+#congrats {
+    text-align: center;
+}
+
+
+/* Default State */
+
+#default-state > .info {
+    position: relative;
+    display: block;
+    margin: 0 auto 10px;
+    color: #E0E0E0;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#default-state > .info #agree {
+    display: none;
+}
+
+#default-state > .info label {
+    line-height: 25px;
+}
+
+#default-state > .info #agree + label span {
+    display: inline-block;
+    margin: -1px 5px 0;
+    width: 25px;
+    height: 25px;
+    background: url(/creatives/UpgradeYourself/html5/tr/turkcell/tr/default/img/checkbox.png) left top no-repeat;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+#default-state > .info #agree:checked + label span {
+    background-position: -25px top;
+}
+
+#default-state .msg {
+    font-size: 16px;
+}
+
+
+/* Double Confirmation */
+
+#double-confirmation,
+#subscription-polling {
+    position: relative;
+    margin: 0 0 10px;
+    padding: 10px;
+    background-color: rgba(80, 80, 80, 0.5);
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #313131;
+    z-index: 5;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 150px 0px rgba(0, 0, 0, 0.4);
+}
+
+#double-confirmation .double-confirmation-creative {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    /*100px;*/
+    overflow: visible;
+}
+
+#double-confirmation .double-confirmation-creative > img {
+    position: relative;
+    display: block;
+    top: -105px;
+    /*-125px;*/
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    height: 185px;
+    /*225px;*/
+}
+
+#double-confirmation #double-confirmation-message {
+    position: relative;
+    display: block;
+    color: #CACACA;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.hlf-btn {
+    position: relative;
+    display: inline-block;
+    margin: 10px 5px 0;
+    padding: 0.750em 10px;
+    width: 100px;
+    background: #43b9dd;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #43b9dd 0%, #277fc2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #43b9dd 0%, #277fc2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #43b9dd 0%, #277fc2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#43b9dd', endColorstr='#277fc2', GradientType=0);
+    /* IE6-9 */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.pulse {
+    -webkit-animation: beat 1s infinite ease-in-out;
+    -moz-animation: beat 1s infinite ease-in-out;
+    -ms-animation: beat 1s infinite ease-in-out;
+    -o-animation: beat 1s infinite ease-in-out;
+    animation: beat 1s infinite ease-in-out;
+}
+
+#container.show-double-confirmation .cursor {
+    top: 40px;
+    left: 80px;
+}
+
+
+/* Subscription Polling */
+
+#subscription-polling .subscription-info {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#subscription-polling #loader {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    background: transparent url("/creatives/FitnessTips/assets/img/preloader.gif") no-repeat;
+    background-position: 50% 50%;
+    background-size: 32px 32px;
+}
+
+
+/* Number Entry */
+
+#number-entry .entry-message {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#number-entry input#number {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    border: 1px solid #bbb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    direction: ltr;
+    font-size: 1.000em;
+    outline: none;
+}
+
+
+/* PIN Entry */
+
+#pin-entry .entry-message {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#pin-entry input#pin {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    border: 1px solid #bbb;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    direction: ltr;
+    font-size: 1.000em;
+    text-align: center;
+    outline: none;
+}
+
+
+/* MO */
+
+#mo #mo-message {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#mo h3 {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#mo div#keyword,
+#mo div#short-code {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Congrats */
+
+#congrats h3 {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#congrats h6 {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+/* Keyframes */
+
+@-webkit-keyframes blink {
+    0%,
+    100% {
+        background: #bf2a25;
+    }
+    50% {
+        background: #6a1f1d;
+    }
+}
+
+@-moz-keyframes blink {
+    0%,
+    100% {
+        background: #bf2a25;
+    }
+    50% {
+        background: #6a1f1d;
+    }
+}
+
+@-ms-keyframes blink {
+    0%,
+    100% {
+        background: #bf2a25;
+    }
+    50% {
+        background: #6a1f1d;
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        background: #bf2a25;
+    }
+    50% {
+        background: #6a1f1d;
+    }
+}
+
+@-webkit-keyframes beat {
+    50% {
+        -webkit-transform: scale(0.95);
+    }
+}
+
+@-moz-keyframes beat {
+    50% {
+        -moz-transform: scale(0.95);
+    }
+}
+
+@-ms-keyframes beat {
+    50% {
+        -ms-transform: scale(0.95);
+    }
+}
+
+@-o-keyframes beat {
+    50% {
+        -o-transform: scale(0.95);
+    }
+}
+
+@keyframes beat {
+    50% {
+        transform: scale(0.95);
+    }
+}
+
+@-webkit-keyframes cursor {
+    50% {
+        -webkit-transform: translate3d(10px, 10px, 0);
+    }
+}
+
+@-moz-keyframes cursor {
+    50% {
+        -moz-transform: translate3d(10px, 10px, 0);
+    }
+}
+
+@-ms-keyframes cursor {
+    50% {
+        -ms-transform: translate3d(10px, 10px, 0);
+    }
+}
+
+@-o-keyframes cursor {
+    50% {
+        -o-transform: translate3d(10px, 10px, 0);
+    }
+}
+
+@keyframes cursor {
+    50% {
+        transform: translate3d(10px, 10px, 0);
+    }
+}
