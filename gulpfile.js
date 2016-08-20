@@ -48,12 +48,12 @@ gulp.task('watch', function() {
     gulp.watch(['creatives/**/*.html'], ['html']);
     gulp.watch(['creatives/**/*.css'], ['html']);
     gulp.watch('creatives/**/*.styl', ['stylus']);
-    gulp.watch('creatives/**/*.js', ['lint']);
+    gulp.watch('creatives/**/*.js', ['html']);
 });
 
 gulp.task('promt', function(){
     prompt.start();
-    prompt.get(['url'], function (err, result) {
+    prompt.get(['url', 'name'], function (err, result) {
         var options = {
             screenSize: {
               width: 320,
@@ -62,7 +62,7 @@ gulp.task('promt', function(){
             userAgent: 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_2 like Mac OS X; en-us)'
               + ' AppleWebKit/531.21.20 (KHTML, like Gecko) Mobile/7B298g'
         }
-        webshot(result.url, 'screenshots/mobile.png', options, function(err) {
+        webshot(result.url, 'screenshots/' + result.name + '.png', options, function(err) {
             // screenshot now saved to google.png
         });
     });
