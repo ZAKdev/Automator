@@ -6,7 +6,8 @@ var gulp = require("gulp"),
     imagemin = require('gulp-imagemin'),
     connect = require("gulp-connect"),
     webshot = require('webshot'),
-    prompt = require('prompt');
+    prompt = require('prompt'),
+    ejs = require("gulp-ejs");
 
 gulp.task('connect', function() {
   connect.server({
