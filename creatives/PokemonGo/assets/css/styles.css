@@ -1,0 +1,1026 @@
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, Helvetica, Sans-serif;
+    background-color: #0b0b0b;
+}
+
+#container.ar,
+#container.ur {
+    direction: rtl;
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+}
+
+#price-info {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 5px 0;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+}
+
+#operator-selection {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+#operator-selection h1 {
+    padding: 0;
+    color: #999;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+#operator-selection .btn {
+    width: 75px;
+    height: auto;
+    padding: 0 !important;
+    display: inline-block;
+    margin: 0 4px!important;
+    background-color: transparent;
+}
+
+#operator-selection .btn span {
+    color: #999;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#operator-selection .btn img {
+    width: 75px;
+    height: 75px;
+    outline: none;
+    display: block;
+    border: 1px solid #ccc;
+    margin: 0 auto 10px auto;
+}
+
+#default-state {
+    display: block;
+}
+
+.cancel-button {
+    position: relative;
+    display: block;
+    margin: 8px auto 0;
+    padding: 5px;
+    width: 75px;
+    color: #032350;
+    font-size: 11px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.80);
+    border: 1px solid #176ab6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#double-confirmation {
+    margin: 0;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+#subscription-polling {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+#subscription-polling .preloader {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 3px dotted #00c0e6;
+    animation: spin 6s infinite linear;
+    -webkit-animation: spin 6s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#subscription-polling p {
+    margin: 0;
+    padding: 0;
+    color: #999;
+    font-size: 14px;
+}
+
+#number-entry {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+#number-entry input,
+#pin-entry input {
+    width: 235px;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    direction: ltr;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgb(105, 152, 158);
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#pin-entry {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+#pin-entry input {
+    width: 80px;
+    text-align: center;
+}
+
+#mo {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    color: #999999;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#mo h3 {
+    margin: 0;
+    padding: 0;
+    color: #d8b52f;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#congrats {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#congrats h3 {
+    color: #d8b52f;
+    letter-spacing: -0.1px;
+    font-size: 18px;
+    margin: 0 0 3px;
+    padding: 0;
+}
+
+#congrats h6 {
+    margin: 0;
+    padding: 0;
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#disclaimer {
+    padding: 0 10px;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+#disclaimer p {
+    color: rgba(255, 255, 255, 0.3);
+    display: block;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+#disclaimer a {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#container.show-subscribe-button #click-here,
+#container.show-default-state #click-here {
+    display: block;
+}
+
+#click-here {
+    color: rgba(255, 255, 255, 0.3);
+    display: none;
+    margin: 5px auto 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+#click-here a {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#msg {
+    color: #999;
+    margin: 10px 0;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.lang-btn {
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    background-color: #e1e1e1;
+}
+
+.lang-btn span {
+    color: #999;
+    width: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 7px 0 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lang-btn img {
+    width: 30px;
+    height: 20px;
+    text-align: right;
+    display: inline-block;
+    background-color: #999;
+    vertical-align: middle;
+    margin: 5px 5px 0px 0px;
+}
+
+.btn {
+    color: #fff;
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #999999;
+}
+
+.no {
+    color: #999;
+    display: block;
+    font-szie: 18px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.error {
+    margin: 10px 0;
+    display: block;
+    color: #DC292C;
+    font-size: 12px;
+}
+
+.fullRounded {
+    border-radius: 30px;
+}
+
+.semiRounded {
+    border-radius: 7px;
+}
+
+.cyan {
+    background-color: #00c0e6;
+}
+
+.yellow {
+    background-color: #eac442;
+}
+
+.purple {
+    background-color: #cb62d9;
+}
+
+.redPink {
+    background-color: #e64b79;
+}
+
+.mintGreen {
+    background-color: #5cde97;
+}
+
+.darkViolet {
+    background-color: #743efc;
+}
+
+
+/*---------CUSTOMISATION STARTS HERE---------*/
+
+#container {
+    max-width: 740px;
+    margin: auto;
+    text-align: center;
+}
+
+#price-info {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+#holder {
+    position: relative;
+    height: 420px;
+}
+
+.title {
+    width: 250px;
+    height: 180px;
+    background: url("/creatives/PokemonGo/assets/img/title.png") center -5px no-repeat;
+    background-size: 360px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+    z-index: 4;
+    -webkit-animation: titleAnim 3s infinite ease-in-out;
+    animation: titleAnim 3s infinite ease-in-out;
+}
+
+#container.ar .title {
+    background-image: url("/creatives/PokemonGo/assets/img/title-ar.png");
+}
+
+#container.ur .title {
+    background-image: url("/creatives/PokemonGo/assets/img/title-ur.png");
+}
+
+@-webkit-keyframes titleAnim {
+    0%,
+    100% {
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+    }
+    50% {
+        -webkit-filter: brightness(130%);
+        filter: brightness(130%);
+    }
+}
+
+.title-shadow {
+    width: 180px;
+    height: 26px;
+    background: url("/creatives/PokemonGo/assets/img/title_shadow.png") center no-repeat;
+    background-size: 180px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 235px;
+    margin: auto;
+    z-index: 1;
+}
+
+#css-animations {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 420px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#states {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    z-index: 2;
+}
+
+#street-view {
+    width: 750px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 375px);
+    margin: auto;
+    background: url("/creatives/PokemonGo/assets/img/background.jpg") left top no-repeat;
+    background-size: 750px auto;
+    /*-webkit-animation: streetViewParallax 3s infinite ease-in-out;
+animation: streetViewParallax 3s infinite ease-in-out;*/
+}
+
+@-webkit-keyframes streetViewParallax {
+    0%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    50% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+    }
+}
+
+@keyframes streetViewParallax {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(-5px, 0, 0);
+    }
+}
+
+#dragon {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 0;
+    right: -20px;
+    top: 185px;
+    z-index: 2;
+    margin: auto;
+    -webkit-animation: streetViewParallax 3s infinite ease-in-out;
+    animation: streetViewParallax 3s infinite ease-in-out;
+}
+
+#dragon span {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#dragon span.dragon-sprite {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    display: block;
+    z-index: 2;
+    background: url("/creatives/PokemonGo/assets/img/dragon.png") left top no-repeat;
+    background-size: 600px auto;
+    -webkit-animation: dragonAnim 2s steps(7) infinite;
+    animation: dragonAnim 2s steps(7) infinite;
+}
+
+@-webkit-keyframes dragonAnim {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -525px 0;
+    }
+}
+
+@keyframes dragonAnim {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -525px 0;
+    }
+}
+
+#dragon span.dragon-shadow {
+    width: 101px;
+    height: 23px;
+    display: block;
+    top: auto;
+    bottom: -10px;
+    left: -20px;
+    z-index: 1;
+    background: url("/creatives/PokemonGo/assets/img/dragon_shadow.png") left top no-repeat;
+    background-size: 101px auto;
+}
+
+#mraid-close {
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+    color: white;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('/public/mraid-landing-pages/img/close.png');
+}
+
+#arrow-left {
+    position: absolute;
+    width: 25px;
+    height: 28px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("/creatives/PokemonGo/assets/img/arrow.png") left top no-repeat;
+    background-size: 25px auto;
+}
+
+#container.show-subscribe-button #click-here,
+#container.show-default-state #click-here {
+    display: block;
+}
+
+#click-here {
+    color: rgba(255, 255, 255, 0.3);
+    display: none;
+    margin: 5px auto 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+#click-here a {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ma-logo {
+    width: 100px;
+    height: 17px;
+    background: url("/creatives/PokemonGo/assets/img/ma_logo.png") left top no-repeat;
+    background-size: 100px 18px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.poweredby {
+    position: relative;
+    display: block;
+    margin: 0 auto 10px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+#operator-selection,
+#number-entry,
+#pin-entry,
+#mo,
+#congrats,
+#subscription-polling {
+    width: 280px;
+    margin: 0 auto 0;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(210, 210, 210, 0.85);
+    background-color: rgba(27, 27, 27, 0.85);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.select-txt {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btn-operator {
+    display: inline-block;
+    width: 60px;
+    margin: 0 2px;
+    color: rgba(210, 210, 210, 0.85);
+    text-decoration: none;
+}
+
+.btn-operator .omantel,
+.btn-operator .ooredoo {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-bottom: 3px;
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #3e3e3e;
+}
+
+.btn-operator .omantel {
+    background: url("/public/img/operators/omantel.png") center no-repeat;
+    background-size: 67px auto;
+}
+
+.btn-operator .ooredoo {
+    background: url("/public/img/operators/ooredoo.png") center no-repeat;
+    background-size: 67px auto;
+}
+
+#pin-entry label span {
+    display: block;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#invalid-number-error,
+#already-subscribed-error,
+#invalid-pin-error {
+    color: #d00034;
+    display: block;
+    margin-top: 5px;
+}
+
+.invalid-number-error input {
+    border: 1px solid rgb(210, 33, 74) !important;
+    background: rgba(208, 0, 52, 0.4) !important;
+}
+
+#keyword,
+#short-code {
+    font-size: 20px;
+    display: block;
+    margin: 5px 0;
+}
+
+#short-code {
+    margin-bottom: 0;
+}
+
+#double-confirmation {
+    width: 300px;
+    margin: 0 auto 10px;
+    padding: 0;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+}
+
+#double-confirmation .btn {
+    width: 260px;
+    height: 47px;
+    background: url("/creatives/PokemonGo/assets/img/button_blue.png") center top no-repeat;
+    background-size: 260px auto;
+    letter-spacing: -0.7px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 8px 0 0;
+    margin: 0 auto 5px;
+    -webkit-animation: btnAnimInner 1s infinite;
+    animation: btnAnimInner 1s infinite;
+}
+
+@-webkit-keyframes btnAnimInner {
+    0%,
+    100% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+    }
+    50% {
+        -webkit-transform: scale(1.03);
+        -webkit-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+}
+
+#double-confirmation-no {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #a0dbcd;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+}
+
+#default-state .btn,
+#number-entry .btn,
+#pin-entry .btn {
+    width: 260px;
+    height: 42px;
+    background: url("/creatives/PokemonGo/assets/img/button_red.png") center top no-repeat;
+    background-size: 260px auto;
+    letter-spacing: -0.7px;
+    font-size: 20px;
+    padding: 13px 0 0;
+    -webkit-animation: btnAnim 1s infinite;
+    animation: btnAnim 1s infinite;
+}
+
+@-webkit-keyframes btnAnim {
+    0%,
+    100% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+        filter: brightness(100%);
+    }
+    50% {
+        -webkit-transform: scale(1.03);
+        -webkit-filter: brightness(130%);
+        filter: brightness(130%);
+    }
+}
+
+#overlay {
+    width: 750px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 375px);
+    margin: auto;
+    background: url("/creatives/PokemonGo/assets/img/background.jpg") left top no-repeat;
+    background-size: 750px auto;
+    z-index: 2;
+    display: none;
+    background: rgb(0, 193, 127);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0, 193, 127, 1) 0%, rgba(0, 142, 117, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 193, 127, 1) 0%, rgba(0, 142, 117, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 193, 127, 1) 0%, rgba(0, 142, 117, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00c17f', endColorstr='#008e75', GradientType=0);
+    /* IE6-9 */
+    opacity: 0.8;
+}
+
+#container.show-double-confirmation #overlay {
+    display: block;
+}
+
+.confirm-msg {
+    display: block;
+    margin: 5px auto 10px;
+    color: #b5e8dc;
+}
+
+.double-confirmation-title {
+    width: 160px;
+    height: 15px;
+    display: block;
+    background: url("/creatives/PokemonGo/assets/img/double_confirmation_title_en.png") center top no-repeat;
+    background-size: 160px auto;
+    margin: auto;
+}
+
+#container.ar .double-confirmation-title {
+    background-image: url("/creatives/PokemonGo/assets/img/double_confirmation_title_ar.png");
+}
+
+#container.ur .double-confirmation-title {
+    background-image: url("/creatives/PokemonGo/assets/img/double_confirmation_title_ur.png");
+}
+
+.level-up {
+    width: 120px;
+    height: 87px;
+    background: url("/creatives/PokemonGo/assets/img/level_up.png") center top no-repeat;
+    background-size: 120px auto;
+    display: block;
+    margin: 0 auto -5px;
+}
+
+#container.ar .level-up {
+    background-image: url("/creatives/PokemonGo/assets/img/level_up-ar.png");
+}
+
+#container.ur .level-up {
+    background-image: url("/creatives/PokemonGo/assets/img/level_up-ur.png");
+}
+
+.operator-logo {
+    width: 110px;
+    height: auto;
+    margin: auto;
+}
+
+#mo-message {
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#keyword,
+#short-code {
+    color: #fff;
+}
+
+@media only screen and (max-height: 375px) {
+    #holder,
+    #css-animations,
+    #street-view {
+        height: 375px;
+    }
+    #container.show-double-confirmation .title {
+        background-size: 285px auto;
+    }
+    .level-up {
+        background: url("/creatives/PokemonGo/assets/img/level_up.png") center no-repeat;
+        background-size: 100px auto;
+    }
+}
+
+
+/*------------ GOOGLE RTB ANIMATION STOP --------------*/
+
+body.stop-animations *,
+body.stop-animations *:before,
+body.stop-animations *:after {
+    /*CSS transitions*/
+    -o-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+
+/*------------ OPERATOR SELECTION --------------*/
+
+#operator-selection {
+    width: 280px;
+    margin: 0 auto 0;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(210, 210, 210, 0.85);
+    background-color: rgba(27, 27, 27, 0.85);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+#operator-selection #operators > span {
+    display: block;
+    padding: 0 0 10px;
+    color: #fff;
+    font-size: 0.95em;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.75), 0 2px 3px rgba(0, 0, 0, 0.75);
+}
+
+#operator-selection #operators a.btn-operator img {
+    width: 60px;
+    height: 60px;
+}
+
+#operator-selection #operators {
+    text-align: center;
+}
+
+
+/*-- PRELOADER SETTINGS:START --*/
+
+.preloader1 {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 10px auto 0;
+    -webkit-animation: preloader1 1.4s linear infinite;
+    animation: preloader1 1.4s linear infinite;
+}
+
+.preloader1 span {
+    position: absolute;
+    vertical-align: top;
+    border-radius: 100%;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    transform-origin: center 20px;
+    -webkit-transform-origin: center 20px;
+    background: #f8c900;
+    margin-right: -4px;
+}
+
+.preloader1 span:nth-child(2) {
+    transform: rotate(36deg);
+    -webkit-transform: rotate(36deg);
+    opacity: 0.1;
+}
+
+.preloader1 span:nth-child(3) {
+    transform: rotate(72deg);
+    -webkit-transform: rotate(72deg);
+    opacity: 0.2;
+}
+
+.preloader1 span:nth-child(4) {
+    transform: rotate(108deg);
+    -webkit-transform: rotate(108deg);
+    opacity: 0.3;
+}
+
+.preloader1 span:nth-child(5) {
+    transform: rotate(144deg);
+    -webkit-transform: rotate(144deg);
+    opacity: 0.4;
+}
+
+.preloader1 span:nth-child(6) {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    opacity: 0.5;
+}
+
+.preloader1 span:nth-child(7) {
+    transform: rotate(216deg);
+    -webkit-transform: rotate(216deg);
+    opacity: 0.6;
+}
+
+.preloader1 span:nth-child(8) {
+    transform: rotate(252deg);
+    -webkit-transform: rotate(252deg);
+    opacity: 0.7;
+}
+
+.preloader1 span:nth-child(9) {
+    transform: rotate(288deg);
+    -webkit-transform: rotate(288deg);
+    opacity: 0.8;
+}
+
+.preloader1 span:nth-child(10) {
+    transform: rotate(324deg);
+    -webkit-transform: rotate(324deg);
+    opacity: 0.9;
+}
+
+@keyframes preloader1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes preloader1 {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#sub-method-detection-request-preloader {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

@@ -1,0 +1,25 @@
+
+#container.ur .title {
+    top: 5px;
+}
+
+#container.ur #default-state .btn,
+#container.ur #number-entry .btn,
+#container.ur #pin-entry .btn {
+    font-size: 16px;
+}
+
+#container.ur #price-info,
+#container.ur #click-here,
+#container.ur #disclaimer p {
+    font-size: 10px;
+}
+
+#container.ur #double-confirmation,
+#container.ur #double-confirmation-no {
+    font-size: 12px;
+}
+
+#container.ur #double-confirmation .btn {
+    font-size: 24px;
+}
