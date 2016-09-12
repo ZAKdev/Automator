@@ -1,4 +1,5 @@
 *.DS_Store
-mobi-base.sublime-workspace
 node_modules/
-mobi-base.sublime-project
+creatives/*
+!creatives/_template/
+screenshots/

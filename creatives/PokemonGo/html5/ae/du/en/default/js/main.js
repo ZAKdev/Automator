@@ -19,7 +19,7 @@ var page = new commonLandingPage({
     forcedPage: "",
     path: "apis/jsonp",
     mapIframeConfirmationUrl: function(url) {
-        return url + "&color1=ffffff&color2=d00213&color3=ff5900"
+        return url + "&color1=ffffff&color2=d00213&color3=ff5900";
     }
 });
 

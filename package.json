@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce",
+  "name": "automator",
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "author": "ZAK",
   "license": "ISC",
-  "description": "",
+  "description": "Makes HTML easier",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-connect": "^4.0.0",

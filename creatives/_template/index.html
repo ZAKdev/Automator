@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="UTF-8">
+<title>PAGE STRUCTURE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="/creatives/NewCreative/assets/css/main.css">
+
+</head>
+
+<body class="guide">
+
+    <div id="container">
+		
+			<div id="price-info">{Price Information Here}</div>
+					
+			<div id="creative">
+				
+				<!-- creative area --> 
+						
+				<div id="holder">
+									
+                    <!-- operator selection -->                	
+					<div id="operator-selection" style="display: none">
+						<h1>Select your  operator</h1>
+				    	<a href="javascript:void(0);" class="btn">
+				        	<img src="assets/img/dummy.png" alt="" class="semiRounded">
+				            <span>Name</span>
+				        </a>
+				        <a href="javascript:void(0);" class="btn">
+				        	<img src="assets/img/dummy.png" alt="" class="semiRounded">
+				            <span>Name</span>
+				        </a>
+				        <a href="javascript:void(0);" class="btn">
+				        	<img src="assets/img/dummy.png" alt="" class="semiRounded">
+				            <span>Name</span>
+				        </a>
+				    </div>
+				
+                	<!-- default state -->  
+					<div id="default-state">
+						<div class="title"></div>
+				    	<a href="javascript:void(0);" class="subscribe btn cyan fullRounded">Subscribe Now!</a>
+				    </div>
+				    
+                    <!-- double confirmation -->  
+				    <div id="double-confirmation" style="display: none">
+                		<span data-x-role="double-confirmation">Press YES to confirm your subscription</span>
+			    		<a href="javascript:void(0);" class="btn cyan fullRounded">YES!</a>
+			    		<span class="no">No</span>
+				    </div>
+				    
+                    <!-- subscription polling -->  
+				    <div id="subscription-polling" style="display: none">
+				    	<div class="preloader"></div>
+				        <p>Subscription polling...</p>
+				    </div>
+				    
+                    <!-- number entry-->  
+				    <form id="number-entry" style="display: none">
+				    	<label data-x-role="enter-number">Enter your mobile number</label>
+				    	<input type="tel" id="number" maxlength="10" value="05">
+				    	<a href="javascript:void(0);" class="btn cyan fullRounded">Submit</a>
+				        <div class="error" id="already-subscribed-error" data-x-role="already-subscribed-error">
+				        	You are already subscribed to this service
+				        </div>
+				    	<div class="error" id="invalid-number-error" data-x-role="invalid-number-error">
+				        	Please enter a valid number
+				        </div>
+				    </form>
+				    
+                    <!--pin entry-->  
+				    <form id="pin-entry" style="display: none">
+				    	<label data-x-role="pin-entry-help">Please enter the PIN code below</label>
+				    	<input type="tel" id="pin" maxlength="4">
+				    	<a href="javascript:void(0);" class="btn cyan fullRounded">Submit</a>
+				        <div class="error" id="invalid-pin-error" data-x-role="invalid-pin-error">
+				        	You entered a wrong PIN
+				        </div>
+				    </form>
+				    
+                    <!-- mo -->  
+				    <div id="mo" style="display: none">
+				        <h3 data-x-role="mo-sms">sms</h3>
+				        <div id="keyword">####</div>
+				        <h3 data-x-role="mo-to">to</h3>
+				        <div id="short-code">####</div>
+				    </div>
+				    
+                    <!-- congrats -->  
+				    <div id="congrats" style="display: none">
+				        <h3 data-x-role="congrats">Congratulations</h3>
+				        <h6 data-x-role="successfully-subscribed">You have been successfully subscribed to the service</h6>
+				    </div>
+					
+				</div>
+	
+				
+			</div>
+			
+			<!-- click here -->  
+			<div id="click-here">
+				<a href="javascript:void(0);" class="subscribe">Click here</a> to subscribe to the service!
+			</div>
+			
+            <!-- msg -->  
+			<div id="msg">{Service slogan here}</div>
+			
+            <!-- language btn -->  
+			<a href="javascript:void(0);" class="lang-btn"> <span>Arabic</span> <img src="assets/img/flag.png" alt=""> </a>
+
+            <!-- disclaimer -->    	
+			<div id="disclaimer">
+			    <p>
+				   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				   when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+				   into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum 
+				   passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+			    </p>
+			    <a href="javascript:void(0);" target="_blank">Terms and Conditions</a>
+			</div>
+				
+	</div>
+    
+     <!-- 
+     Add only this for testing purposes, this script will allow you to directly see other state 
+     from your mobile by tapping on the price-info it will activate states dropdown 
+     -->  
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+
+</html>
