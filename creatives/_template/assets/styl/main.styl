@@ -4,11 +4,11 @@
 $holder_color = #f5f5f5
 $secondary_color = #999
 
-$container_bg = url("/creatives/GetGreencard/assets/img/bg_home_ar.png") center top no-repeat
-$main_title = url("/creatives/GetGreencard/assets/img/main-title_ar.png") center top no-repeat
-$main_secondary = url("/creatives/GetGreencard/assets/img/badge_ar.png") center top no-repeat
-$double_title = url("/creatives/GetGreencard/assets/img/double-title_ar.png") center top no-repeat
-$double_image = url("/creatives/GetGreencard/assets/img/approved_ar.png") center top no-repeat
+$container_bg = ""
+$main_title = ""
+$main_secondary = ""
+$double_title = ""
+$double_image = ""
 
 // Keyframes
 @keyframes spin
@@ -58,7 +58,7 @@ body.guide #disclaimer
 	right 0
 	bottom 0px
 	position absolute
-	background-color $holder
+	background-color $holder_color
 
 #price-info
 	color $secondary_color
@@ -67,12 +67,13 @@ body.guide #disclaimer
 	font-size 11px
 	text-align center
 
+// Operator Selection
 #operator-selection
 	margin 0px
 	padding 10px
 	display block
 	text-align center
-	h1
+	.title
 		padding 0
 		color $secondary_color
 		margin 10px 0
@@ -95,12 +96,19 @@ body.guide #disclaimer
 			display block
 			border 1px solid #ccc
 			margin 0 auto 10px auto
-
+			
+// Default State
 #default-state
 	margin 0px
 	padding 10px
 	display block
+	.title
+		background $main_title
+		width 260px
+		height 60px
+		background-size cover
 
+// Double Confirmation
 #double-confirmation
 	margin 0px
 	padding 10px
@@ -113,6 +121,7 @@ body.guide #disclaimer
 		font-weight bold
 		margin-bottom 10px
 
+// Subscription Polling
 #subscription-polling
 	margin 0px
 	padding 10px
@@ -133,6 +142,7 @@ body.guide #disclaimer
 			color $secondary_color
 			font-size 14px
 
+// Number Entry
 #number-entry
 	margin 0px
 	padding 10px
@@ -155,6 +165,7 @@ body.guide #disclaimer
 	font-size 14px
 	font-weight bold
 
+// Pin Entry
 #pin-entry
 	margin 0px
 	padding 10px
@@ -170,6 +181,7 @@ body.guide #disclaimer
 		text-align center
 		border 1px solid #ccc
 
+// MO
 #mo
 	margin 0px
 	padding 10px
@@ -184,6 +196,7 @@ body.guide #disclaimer
 		color #00c0e6
 		font-size 18px
 
+// Congrats
 #congrats
 	margin 0px
 	padding 10px

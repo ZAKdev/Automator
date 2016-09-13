@@ -22,7 +22,7 @@ body.guide #disclaimer {
   display: block;
   margin: 0 auto;
   max-width: 960px;
-  background: url("/creatives/GetGreencard/assets/img/bg_home_ar.png") center top no-repeat;
+  background: "";
   -webkit-background-size: 490px;
   -moz-background-size: 490px;
   background-size: 490px;
@@ -39,7 +39,7 @@ body.guide #disclaimer {
   right: 0;
   bottom: 0px;
   position: absolute;
-  background-color: $holder;
+  background-color: #f5f5f5;
 }
 #price-info {
   color: #999;
@@ -54,7 +54,7 @@ body.guide #disclaimer {
   display: block;
   text-align: center;
 }
-#operator-selection h1 {
+#operator-selection .title {
   padding: 0;
   color: #999;
   margin: 10px 0;
@@ -85,6 +85,14 @@ body.guide #disclaimer {
   margin: 0px;
   padding: 10px;
   display: block;
+}
+#default-state .title {
+  background: "";
+  width: 260px;
+  height: 60px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 #double-confirmation {
   margin: 0px;
