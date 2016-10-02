@@ -11,13 +11,14 @@
 - CSS animations
 
 ### Create New Template
-First put all informations in your config.json file
+First give all informations in your `config.json` file
 - run `gulp new`
 - run `gulp start`
-#### Settings
-- Open `main.styl` give values of all pre created variables
+
+### Settings of Template
+- Open `main.styl` give values of all pre-created variables
 - Change content from `index.html`
-- Your Page READY
+- Page READY ;)
 
 ### Compress Images
 - run `gulp compress`
@@ -26,9 +27,7 @@ First put all informations in your config.json file
 - run `gulp shoot`
 
 ## Install
-
 Run conmmand
-
 - `sudo npm install`
 
 ### Config file
