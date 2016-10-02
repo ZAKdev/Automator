@@ -1,29 +1,106 @@
 @import 'nib'
+@import '../../../animations/spin.styl'
 
 // Colors
-$holder_color = #f5f5f5
+$basic_color = #fff
+$primary_color = #00c0e6
 $secondary_color = #999
+$error = #dc292c
+
+$holder_color = #f5f5f5
+$price_text = #999
+
+// Operator
+$operator_text = #999
+$operator_button = #999
+
+// Default State
+$default_text = #999
+$default_button = #00c0e6
+
+// Double Confirmation
+$double_text = #999
+$double_yes = #00c0e6
+$double_no = #999
+
+// Subscription Polling
+$preloader = #00c0e6
+$polling_text = #000
+
+// Number Entry
+$number_text = #999
+$number_button = #00c0e6
+
+// PIN Entry
+$pin_text = #999
+$pin_button = #00c0e6
+
+// MO Entry
+$mo_heading = #00c0e6
+$mo_text = #999
+
+// Congrats
+$congrats_heading = #00c0e6
+$congrats_text = #999
+
+// Others
+$disclaimer_text = #999
+$disclaimer_link = #00c0e6
+
+$clickhere_text = #999
+$clickhere_link = #00c0e6
+
+$msg_text = #999
+
+$lang_bor = #ccc
+$lang_bg = #e1e1e1
+$lang_text = #999
+
+$input_bor = #ccc
+$input_bg = #e1e1e1
+$input_text = #999
 
 $container_bg = ""
-$main_title = ""
-$main_secondary = ""
+$default_title = ""
+$default_image = ""
 $double_title = ""
 $double_image = ""
 
-// Keyframes
-@keyframes spin
-	0%
-		transform rotate(0deg)
-	100%
-		transform rotate(360deg)
+// Start Buttons and Inputs
+    .btn
+        color $basic_color
+        width 240px
+        display block
+        margin 0 auto
+        font-size 18px
+        font-weight bold
+        padding 15px 10px
+        text-align center
+        text-decoration none
+        background-color $primary_color
 
+    .no
+        color $secondary_color
+        display block
+        font-szie 18px
+        margin-top 10px
+        text-decoration underline
+    
+    .input
+        color $input_text
+        border 1px solid $input_bor
+        background $input_bg
+        outline none
+        font-size 20px
+        border-radius 7px
+// End Buttons and Inputs
 
 body
-	margin 0
-	padding 0
-	-webkit-text-size-adjust none
-	-webkit-font-smoothing antialiased
-	font-family Arial, Helvetica, sans-serif
+    margin 0
+    padding 0
+    -webkit-text-size-adjust none
+    -webkit-font-smoothing antialiased
+    font-family Arial, Helvetica, sans-serif
 
 body.guide #container,
 body.guide #price-info,
@@ -32,291 +109,311 @@ body.guide #click-here,
 body.guide #msg,
 body.guide #lang-btn,
 body.guide #disclaimer
-	border 1px dotted #cccccc
+    border 1px dotted #cccccc
 
 #container.ar
-	direction rtl
+    direction rtl
 
 #container
-	height auto
-	display block
-	margin 0 auto
-	max-width 960px
-	background $container_bg
-	background-size 490px
+    height auto
+    display block
+    margin 0 auto
+    max-width 960px
+    background $container_bg
+    background-size 490px
 
 
 #creative
-	width 300px
-	display block
-	margin 0 auto
-	min-height 352px
-	position relative
+    width 300px
+    display block
+    margin 0 auto
+    min-height 352px
+    position relative
 
 #holder
-	left 0
-	right 0
-	bottom 0px
-	position absolute
-	background-color $holder_color
+    left 0
+    right 0
+    bottom 0px
+    position absolute
+    background-color $holder_color
 
 #price-info
-	color $secondary_color
-	padding 5px 0
-	display block
-	font-size 11px
-	text-align center
+    color $price_text
+    padding 5px 0
+    display block
+    font-size 11px
+    text-align center
 
-// Operator Selection
-#operator-selection
-	margin 0px
-	padding 10px
-	display block
-	text-align center
-	.title
-		padding 0
-		color $secondary_color
-		margin 10px 0
-		font-size 14px
-	.btn
-		width 75px
-		height auto
-		padding 0 !important
-		display inline-block
-		margin 0 4px!important
-		background-color transparent
-		span
-			color $secondary_color
-			font-size 13px
-			text-transform uppercase
-		img
-			width 75px
-			height 75px
-			outline none
-			display block
-			border 1px solid #ccc
-			margin 0 auto 10px auto
-			
-// Default State
-#default-state
-	margin 0px
-	padding 10px
-	display block
-	.title
-		background $main_title
-		width 260px
-		height 60px
-		background-size cover
+// Start show images based on states
+    .double-confirmation
+        display none
+    .show-double-confirmation
+        .default-state
+            display none
+        .double-confirmation
+            display block
+// End show images based on states
 
-// Double Confirmation
-#double-confirmation
-	margin 0px
-	padding 10px
-	display block
-	text-align center
-	span
-		color $secondary_color
-		display block
-		font-size 12px
-		font-weight bold
-		margin-bottom 10px
+// Start images for states
+    .default-title
+        background $default_title
+        width 260px
+        height 60px
+        background-size cover
+        
+    .default-image
+        background $default_image
+        width 60px
+        height 60px
+        background-size cover
+        
+    .double-title
+        background $double_title
+        width 300px
+        height 60px
+        background-size cover
+        
+    .double-image
+        background $double_image
+        width 180px
+        height 110px
+        background-size cover
+// End images for states
 
-// Subscription Polling
-#subscription-polling
-	margin 0px
-	padding 10px
-	display block
-	text-align center
-	.preloader
-		width 50px
-		height 50px
-		display block
-		margin 10px auto
-		border-radius 50%
-		border 3px dotted #00c0e6
-		animation spin 6s infinite linear
-		-webkit-animation spin 6s infinite linear
-		p
-			margin 0
-			padding 0
-			color $secondary_color
-			font-size 14px
+// Start States
+    // Operator Selection
+    #operator-selection
+        margin 0px
+        padding 10px
+        display block
+        text-align center
+        .title
+            padding 0
+            color $operator_text
+            margin 10px 0
+            font-size 14px
+        .btn
+            width 75px
+            height auto
+            padding 0 !important
+            display inline-block
+            margin 0 4px!important
+            background-color transparent
+            span
+                color $operator_button
+                font-size 13px
+                text-transform uppercase
+            img
+                width 75px
+                height 75px
+                outline none
+                display block
+                border 1px solid #ccc
+                margin 0 auto 10px auto
+                
+    // Default State
+    #default-state
+        margin 0px
+        padding 10px
+        display block
+        color $default_text
+        .btn
+            background $default_button
+            color $basic_color
 
-// Number Entry
-#number-entry
-	margin 0px
-	padding 10px
-	display block
-	text-align center
-	input
-		width 160px
-		padding 10px
-		margin 10px 0
-		outline none
-		direction ltr
-		font-size 20px
-		border-radius 7px
-		border 1px solid #ccc
+    // Double Confirmation
+    #double-confirmation
+        margin 0px
+        padding 10px
+        display block
+        text-align center
+        color $double_text
+        span
+            display block
+            font-size 12px
+            font-weight bold
+            margin-bottom 10px
+        .btn
+            background $double_yes
+            color $basic_color
+        .no
+           color $double_no
 
-#number-entry label,
-#pin-entry label
-	color $secondary_color
-	display block
-	font-size 14px
-	font-weight bold
+    // Subscription Polling
+    #subscription-polling
+        margin 0px
+        padding 10px
+        display block
+        text-align center
+        color $polling_text
+        .preloader
+            width 50px
+            height 50px
+            display block
+            margin 10px auto
+            border-radius 50%
+            border 3px dotted $preloader
+            animation spin 6s infinite linear
+            p
+                margin 0
+                padding 0
+                font-size 14px
 
-// Pin Entry
-#pin-entry
-	margin 0px
-	padding 10px
-	display block
-	text-align center
-	input
-		width 80px
-		padding 10px
-		margin 10px 0
-		outline none
-		font-size 20px
-		border-radius 7px
-		text-align center
-		border 1px solid #ccc
+    // Number Entry
+    #number-entry
+        margin 0px
+        padding 10px
+        display block
+        text-align center
+        color $number_text
+        label
+            display block
+            font-size 14px
+            font-weight bold
+        .input
+            width 160px
+            padding 10px
+            margin 10px 0
+        .btn
+            background $number_button
+            color $basic_color
 
-// MO
-#mo
-	margin 0px
-	padding 10px
-	display block
-	color $secondary_color
-	font-size 16px
-	font-weight bold
-	text-align center
-	h3
-		margin 0
-		padding 0
-		color #00c0e6
-		font-size 18px
+    // Pin Entry
+    #pin-entry
+        margin 0px
+        padding 10px
+        display block
+        text-align center
+        color $pin_text
+        label
+            display block
+            font-size 14px
+            font-weight bold
+        .input
+            width 80px
+            padding 10px
+            margin 10px 0
+        .btn
+            background $pin_button
+            color $basic_color
 
-// Congrats
-#congrats
-	margin 0px
-	padding 10px
-	display block
-	text-align center
-	padding-bottom 20px
-	h3
-		color #00c0e6
-		font-size 18px
-	h6
-		margin 0
-		padding 0
-		color $secondary_color
-		font-size 14px
-		font-weight normal
+    // MO
+    #mo
+        margin 0px
+        padding 10px
+        display block
+        color $mo_text
+        font-size 16px
+        font-weight bold
+        text-align center
+        h3
+            margin 0
+            padding 0
+            color $mo_heading
+            font-size 18px
+
+    // Congrats
+    #congrats
+        margin 0px
+        padding 10px
+        display block
+        text-align center
+        padding-bottom 20px
+        h3
+            color $congrats_heading
+            font-size 18px
+        h6
+            margin 0
+            padding 0
+            color $congrats_text
+            font-size 14px
+            font-weight normal
+// End States
 
 #disclaimer
-	margin 0
-	padding 0
-	display block
-	text-align center
-	padding-bottom 20px
-	p
-		color $secondary_color
-		display block
-		font-size 12px
-		margin 10px auto
-		max-width 300px
-		line-height 1.5em
-		text-align justify
-	a
-		color $secondary_color
-		font-size 12px
+    margin 0
+    padding 0
+    display block
+    text-align center
+    padding-bottom 20px
+    p
+        color $disclaimer_text
+        display block
+        font-size 12px
+        margin 10px auto
+        max-width 300px
+        line-height 1.5em
+        text-align justify
+    a
+        color $disclaimer_link
+        font-size 12px
 
 #click-here
-	color $secondary_color
-	display block
-	font-size 12px
-	text-align center
-	margin 10px auto 0 auto
-	a
-		color #00c0e6
+    color $clickhere_text
+    display block
+    font-size 12px
+    text-align center
+    margin 10px auto 0 auto
+    a
+        color $clickhere_link
 
 #msg
-	color $secondary_color
-	margin 10px 0
-	display block
-	font-size 12px
-	text-align center
+    color $msg_text
+    margin 10px 0
+    display block
+    font-size 12px
+    text-align center
 
 .lang-btn
-	width 100px
-	height 30px
-	display block
-	margin 0 auto
-	border-radius 4px
-	text-align center
-	border 1px solid #ccc
-	text-decoration none
-	background-color #e1e1e1
-	span
-		color $secondary_color
-		width 60px
-		font-size 12px
-		font-weight bold
-		margin 7px 0 0 0
-		display inline-block
-		vertical-align middle
-	img
-		width 30px
-		height 20px
-		text-align right
-		display inline-block
-		background-color $secondary_color
-		vertical-align middle
-		margin 5px 5px 0px 0px
+    width 100px
+    height 30px
+    display block
+    margin 0 auto
+    border-radius 4px
+    text-align center
+    border 1px solid $lang_bor
+    text-decoration none
+    background-color $lang_bg
+    span
+        color $lang_text
+        width 60px
+        font-size 12px
+        font-weight bold
+        margin 7px 0 0 0
+        display inline-block
+        vertical-align middle
+    img
+        width 30px
+        height 20px
+        text-align right
+        display inline-block
+        vertical-align middle
+        margin 5px 5px 0px 0px
 
 #container.ar .lang-btn img
-	margin 5px 0px 0px 5px
-
-.btn
-	color #fff
-	width 240px
-	display block
-	margin 0 auto
-	font-size 18px
-	font-weight bold
-	padding 15px 10px
-	text-align center
-	text-decoration none
-	background-color $secondary_color
-
-.no
-	color $secondary_color
-	display block
-	font-szie 18px
-	margin-top 10px
-	text-decoration underline
+    margin 5px 0px 0px 5px
 
 .error
-	margin 10px 0
-	display block
-	color #DC292C
-	font-size 12px
+    margin 10px 0
+    display block
+    color $error
+    font-size 12px
 
 .fullRounded
-	border-radius 30px
+    border-radius 30px
 
 .semiRounded
-	border-radius 7px
+    border-radius 7px
 
 .cyan
-	background-color #00c0e6
+    background-color #00c0e6
 .yellow
-	background-color #eac442
+    background-color #eac442
 .purple
-	background-color #cb62d9
+    background-color #cb62d9
 .redPink
-	background-color #e64b79
+    background-color #e64b79
 .mintGreen
-	background-color #5cde97
+    background-color #5cde97
 .darkViolet
-	background-color #743efc
+    background-color #743efc

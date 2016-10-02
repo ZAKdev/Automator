@@ -38,15 +38,21 @@ gulp.task('stylus', function () {
        .pipe(connect.reload());
 });
 
-gulp.task('imagemin', function () {
+gulp.task('imagemin-assests', function () {
     gulp.src([config.creative+'/assets/img/*.png', config.creative+'/assets/img/*.jpg', config.creative+'/assets/img/*.gif', config.creative+'/assets/img/*.jpeg'])
         .pipe(imagemin())
         .pipe(gulp.dest(config.creative+'/assets/img'))
 });
 
+gulp.task('imagemin-zshared', function () {
+    gulp.src([config.creative+'/z-shared/img/*.png', config.creative+'/z-shared/img/*.jpg', config.creative+'/z-shared/img/*.gif', config.creative+'/z-shared/img/*.jpeg'])
+        .pipe(imagemin())
+        .pipe(gulp.dest(config.creative+'/z-shared/img'))
+});
+
 gulp.task('watch', function() {
     gulp.watch(config.path+'/*.html', ['html']);
-    gulp.watch(config.creative+'/assets/css/*.css', ['html']);
+    gulp.watch([config.creative+'/assets/css/*.css', config.creative+'/z-shared/css/*.css', config.path+'/css/*.css'], ['html']);
     gulp.watch(config.creative+'/assets/styl/*.styl', ['stylus']);
     gulp.watch(config.path+'/js/*.js', ['lint', 'html']);
 });
@@ -57,12 +63,25 @@ gulp.task('screenshoot', function(){
           width: 320
         },
         renderDelay: "2000",
-        quality: "90",
+        quality: "100",
         userAgent: 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_2 like Mac OS X; en-us)'
           + ' AppleWebKit/531.21.20 (KHTML, like Gecko) Mobile/7B298g'
     };
-    webshot(config.url, 'screenshots/'+config.name+'.png', options, function(err) {
-
+    webshot(config.url+'?state=operator-selection', 'screenshots/'+config.name+'-operator-selection.png', options, function(err) {
+    });
+    webshot(config.url+'?state=default-state', 'screenshots/'+config.name+'-default-state.png', options, function(err) {
+    });
+    webshot(config.url+'?state=double-confirmation', 'screenshots/'+config.name+'-double-confirmation.png', options, function(err) {
+    });
+    webshot(config.url+'?state=subscription-polling', 'screenshots/'+config.name+'-subscription-polling.png', options, function(err) {
+    });
+    webshot(config.url+'?state=number-entry', 'screenshots/'+config.name+'-number-entry.png', options, function(err) {
+    });
+    webshot(config.url+'?state=pin-entry', 'screenshots/'+config.name+'-pin-entry.png', options, function(err) {
+    });
+    webshot(config.url+'?state=mo', 'screenshots/'+config.name+'-mo.png', options, function(err) {
+    });
+    webshot(config.url+'?state=congrats', 'screenshots/'+config.name+'-congrats.png', options, function(err) {
     });
 });
 
@@ -78,6 +97,6 @@ gulp.task('newcreative', function(){
 });
 
 gulp.task('start', ['connect', 'watch']);
-gulp.task('compress', ['imagemin']);
+gulp.task('compress', ['imagemin-assests', 'imagemin-zshared']);
 gulp.task('shoot', ['screenshoot']);
 gulp.task('new', ['newcreative']);
