@@ -35,4 +35,4 @@ Put creative information in `config.json` then run command
 - `gulp start`
 
 Then visit url of creative with http://localhost:8000
-example: `http://localhost:8000/creatives/YourCreative/html5/us/_/en/default/`
+- example: `http://localhost:8000/creatives/YourCreative/html5/us/_/en/default/`
