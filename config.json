@@ -1,6 +1,6 @@
 {
-	"name" : "WinningCourses",
-	"creative" : "creatives/WinningCourses",
-	"path" : "creatives/WinningCourses/html5/az/_/az/default",
-	"url" : "http://localhost:8000/creatives/WinningCourses/html5/az/_/az/default/"
+	"name" : "NewCreative",
+	"creative" : "creatives/NewCreative",
+	"path" : "creatives/NewCreative/html5/au/_/en/default",
+	"url" : "http://localhost:8000/creatives/NewCreative/html5/au/_/en/default/"
 }
