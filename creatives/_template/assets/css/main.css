@@ -87,7 +87,6 @@
   background: #e1e1e1;
   outline: none;
   font-size: 20px;
-  -webkit-border-radius: 7px;
   border-radius: 7px;
 }
 body {
@@ -96,6 +95,7 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
 }
 body.guide #container,
 body.guide #price-info,
@@ -256,7 +256,6 @@ body.guide #disclaimer {
   height: 50px;
   display: block;
   margin: 10px auto;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
   border: 3px dotted #00c0e6;
   -webkit-animation: spin 6s infinite linear;
@@ -387,7 +386,6 @@ body.guide #disclaimer {
   height: 30px;
   display: block;
   margin: 0 auto;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   text-align: center;
   border: 1px solid #ccc;
@@ -421,11 +419,9 @@ body.guide #disclaimer {
   font-size: 12px;
 }
 .fullRounded {
-  -webkit-border-radius: 30px;
   border-radius: 30px;
 }
 .semiRounded {
-  -webkit-border-radius: 7px;
   border-radius: 7px;
 }
 .cyan {
