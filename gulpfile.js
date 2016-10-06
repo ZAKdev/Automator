@@ -28,13 +28,23 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
-gulp.task('stylus', function () {
+gulp.task('stylus-assets', function () {
     return gulp.src(config.creative+'/assets/styl/*.styl')
         .pipe(stylus({
             compress: false,
             use: nib()
         }))
        .pipe(gulp.dest(config.creative+'/assets/css'))
+       .pipe(connect.reload());
+});
+
+gulp.task('stylus-zshared', function () {
+    return gulp.src(config.creative+'/z-shared/styl/*.styl')
+        .pipe(stylus({
+            compress: false,
+            use: nib()
+        }))
+       .pipe(gulp.dest(config.creative+'/z-shared/css'))
        .pipe(connect.reload());
 });
 
@@ -53,7 +63,8 @@ gulp.task('imagemin-zshared', function () {
 gulp.task('watch', function() {
     gulp.watch(config.path+'/*.html', ['html']);
     gulp.watch([config.creative+'/assets/css/*.css', config.creative+'/z-shared/css/*.css', config.path+'/css/*.css'], ['html']);
-    gulp.watch(config.creative+'/assets/styl/*.styl', ['stylus']);
+    gulp.watch(config.creative+'/assets/styl/*.styl', ['stylus-assets']);
+    gulp.watch(config.creative+'/z-shared/styl/*.styl', ['stylus-zshared']);
     gulp.watch(config.path+'/js/*.js', ['lint', 'html']);
 });
 

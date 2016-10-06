@@ -3,3 +3,4 @@ node_modules/
 creatives/*
 !creatives/_template/
 screenshots/
+config.json
