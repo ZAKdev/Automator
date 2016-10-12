@@ -7,12 +7,12 @@ if(timeLeft != undefined){
         if(seconds != 0){
             seconds = seconds - 1;
             if(seconds < 10){
-                document.getElementById("time-left").innerHTML = "00:0"+seconds
+                document.getElementById("time-left").innerHTML = "00:0"+seconds;
             } else {
-                document.getElementById("time-left").innerHTML = "00:"+seconds
+                document.getElementById("time-left").innerHTML = "00:"+seconds;
             }
         }
-    }, 1000)
+    }, 1000);
 }
 
 // Start Switching Pages
@@ -36,7 +36,7 @@ if(timeLeft != undefined){
                 document.getElementById(state).style.display = "block";
             }
         });
-    }
+    };
 
     page.switchState = switchState;
 // End Switching Pages

@@ -3,7 +3,7 @@ var gulp = require("gulp"),
     stylus = require('gulp-stylus'),
     nib    = require('nib'),
     jshint = require('gulp-jshint'),
-    imagemin = require('gulp-imagemin'),
+    imageop = require('gulp-image-optimization'),
     connect = require("gulp-connect"),
     webshot = require('webshot'),
     config = require("./config.json");
@@ -48,16 +48,22 @@ gulp.task('stylus-zshared', function () {
        .pipe(connect.reload());
 });
 
-gulp.task('imagemin-assests', function () {
+gulp.task('imagemin-assests', function(cb) {
     gulp.src([config.creative+'/assets/img/*.png', config.creative+'/assets/img/*.jpg', config.creative+'/assets/img/*.gif', config.creative+'/assets/img/*.jpeg'])
-        .pipe(imagemin())
-        .pipe(gulp.dest(config.creative+'/assets/img'))
+        .pipe(imageop({
+            optimizationLevel: 100,
+            progressive: true,
+            interlaced: true
+        })).pipe(gulp.dest(config.creative+'/assets/img')).on('end', cb).on('error', cb);
 });
 
-gulp.task('imagemin-zshared', function () {
+gulp.task('imagemin-zshared', function(cb) {
     gulp.src([config.creative+'/z-shared/img/*.png', config.creative+'/z-shared/img/*.jpg', config.creative+'/z-shared/img/*.gif', config.creative+'/z-shared/img/*.jpeg'])
-        .pipe(imagemin())
-        .pipe(gulp.dest(config.creative+'/z-shared/img'))
+        .pipe(imageop({
+            optimizationLevel: 100,
+            progressive: true,
+            interlaced: true
+        })).pipe(gulp.dest(config.creative+'/z-shared/img')).on('end', cb).on('error', cb);
 });
 
 gulp.task('watch', function() {
@@ -105,6 +111,11 @@ gulp.task('newcreative', function(){
 
     gulp.src('creatives/_template/main.js')
     .pipe(gulp.dest(config.path+'/js'))
+});
+
+gulp.task('copy', function(){
+    gulp.src(config.creative+'/**/*', {base:"./"})
+    .pipe(gulp.dest(config.mobi))
 });
 
 gulp.task('start', ['connect', 'watch']);
