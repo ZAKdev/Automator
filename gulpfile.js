@@ -75,6 +75,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('screenshoot', function(){
+    var screenshotPath = config.path.replace(/\//g, '-').replace('creatives-', '').replace('default', '');
     var options = {
         screenSize: {
           width: 320
@@ -84,21 +85,21 @@ gulp.task('screenshoot', function(){
         userAgent: 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_2 like Mac OS X; en-us)'
           + ' AppleWebKit/531.21.20 (KHTML, like Gecko) Mobile/7B298g'
     };
-    webshot(config.url+'?state=operator-selection', 'screenshots/'+config.name+'-operator-selection.png', options, function(err) {
+    webshot(config.url+'?state=operator-selection', 'screenshots/'+config.name+'/'+screenshotPath+'operator-selection.png', options, function(err) {
     });
-    webshot(config.url+'?state=default-state', 'screenshots/'+config.name+'-default-state.png', options, function(err) {
+    webshot(config.url+'?state=default-state', 'screenshots/'+config.name+'/'+screenshotPath+'default-state.png', options, function(err) {
     });
-    webshot(config.url+'?state=double-confirmation', 'screenshots/'+config.name+'-double-confirmation.png', options, function(err) {
+    webshot(config.url+'?state=double-confirmation', 'screenshots/'+config.name+'/'+screenshotPath+'double-confirmation.png', options, function(err) {
     });
-    webshot(config.url+'?state=subscription-polling', 'screenshots/'+config.name+'-subscription-polling.png', options, function(err) {
+    webshot(config.url+'?state=subscription-polling', 'screenshots/'+config.name+'/'+screenshotPath+'subscription-polling.png', options, function(err) {
     });
-    webshot(config.url+'?state=number-entry', 'screenshots/'+config.name+'-number-entry.png', options, function(err) {
+    webshot(config.url+'?state=number-entry', 'screenshots/'+config.name+'/'+screenshotPath+'number-entry.png', options, function(err) {
     });
-    webshot(config.url+'?state=pin-entry', 'screenshots/'+config.name+'-pin-entry.png', options, function(err) {
+    webshot(config.url+'?state=pin-entry', 'screenshots/'+config.name+'/'+screenshotPath+'pin-entry.png', options, function(err) {
     });
-    webshot(config.url+'?state=mo', 'screenshots/'+config.name+'-mo.png', options, function(err) {
+    webshot(config.url+'?state=mo', 'screenshots/'+config.name+'/'+screenshotPath+'mo.png', options, function(err) {
     });
-    webshot(config.url+'?state=congrats', 'screenshots/'+config.name+'-congrats.png', options, function(err) {
+    webshot(config.url+'?state=congrats', 'screenshots/'+config.name+'/'+screenshotPath+'congrats.png', options, function(err) {
     });
 });
 

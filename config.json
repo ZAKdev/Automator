@@ -1,7 +1,7 @@
 {
-	"name" : "NewCreative",
-	"creative" : "creatives/NewCreative",
-	"path" : "creatives/NewCreative/html5/au/_/en/default",
-	"url" : "http://localhost:8000/creatives/NewCreative/html5/au/_/en/default/",
+	"name" : "CarEssentials",
+	"creative" : "creatives/CarEssentials",
+	"path" : "creatives/CarEssentials/html5/kw/viva/en/default",
+	"url" : "http://localhost:8000/creatives/CarEssentials/html5/kw/viva/en/default/",
 	"mobi" : "/ZAK/Mobitrans/mobi-one/"
 }
